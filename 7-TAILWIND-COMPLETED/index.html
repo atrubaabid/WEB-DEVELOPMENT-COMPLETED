@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <!-- 1. You need to add Tailwind CSS cdn link -->
+     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+     <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+
+     <!--  1ST OPTION TAILWIND CDN  =>  You need to add Tailwind CSS cdn link in your head -->
+
+     <!--  2ND OPTION TAILWIND CLI  =>  you need to download node.js first, after download check these commands on your cmd -->
+
+     <!--  [FOR CHECKING NODE.JS] 
+
+          node -v   =   checking version if download or not
+          npm -v    =   same   
+          npx -v    =   same  
+
+          
+          [FOR INSTALL TAILWIND CSS use these all commands in you folder cmd where you make your project]
+
+          npm init -y   =   for making package.json file then,
+
+          npm install tailwindcss @tailwindcss/cli    =   use this command for Install Tailwind CSS then,
+
+          make src folder and make input.css in this folder and add this code (@import "tailwindcss";) in this file for Import Tailwind in your CSS then add,
+
+          npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch    ===   for Start the Tailwind CLI build process and then,
+
+          make index.html and link output.css file and then you can use tailwind classes
+          
+        -->
+
+
+
+     <!-- 3. Install this extension for classes suggestion (Tailwind CSS IntelliSense) -->
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 4. WIDTH -->
+
+     <!-- TAILWIND CLASSES -->
+
+     <!--     w-0   =>    0px
+             w-1   =>    4px
+             w-2   =>    8px
+             w-3   =>    12px
+             w-4   =>    16px
+             w-5   =>    20px
+             w-6   =>    24px
+             w-8   =>    32px
+             w-10   =>    40px
+             w-12   =>    48px
+             w-16   =>    64px
+             w-20   =>    80px
+             w-24   =>    96px
+             w-32   =>    128px
+             w-40   =>    160px
+             w-48   =>    192px
+             w-64   =>    256px
+             w-full   =>    100%
+             w-screen   =>    100vw
+             w-auto   =>    auto -->
+
+     <div class="bg-orange-400 w-0">Atruba</div>
+     <div class="bg-orange-400 w-10">Atruba</div>
+     <div class="bg-orange-400 w-64">Atruba</div>
+     <div class="bg-orange-400 w-full">Atruba</div>
+     <div class="bg-orange-400 w-screen">Atruba</div>
+     <div class="bg-orange-400 w-auto">Atruba</div>
+
+     <!-- CUSTOM CLASSES -->
+     <div class="bg-orange-400 w-[200px]">Atruba</div>
+     <div class="bg-orange-400 w-[60%]">Atruba</div>
+     <div class="bg-orange-400 w-[20rem]">Atruba</div>
+     <div class="bg-orange-400 w-[80vw]">Atruba</div>
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 5. HEIGHT -->
+
+     <!-- TAILWIND CLASSES -->
+
+     <!--     h-0   =>    0px
+             h-1   =>    4px
+             h-2   =>    8px
+             h-3   =>    12px
+             h-4   =>    16px
+             h-5   =>    20px
+             h-6   =>    24px
+             h-8   =>    32px
+             h-10   =>    40px
+             h-12   =>    48px
+             h-16   =>    64px
+             h-20   =>    80px
+             h-24   =>    96px
+             h-32   =>    128px
+             h-40   =>    160px
+             h-48   =>    192px
+             h-64   =>    256px
+             h-full   =>    100%
+             h-screen   =>    100vw
+             h-auto   =>    auto -->
+
+
+     <!-- <div class="bg-orange-400 h-0">Atruba</div>
+    <div class="bg-orange-400 h-10">Atruba</div>
+    <div class="bg-orange-400 h-64">Atruba</div>
+    <div class="bg-orange-400 h-full">Atruba</div>
+    <div class="bg-orange-400 h-screen">Atruba</div>
+    <div class="bg-orange-400 h-auto">Atruba</div> -->
+
+     <!-- CUSTOM CLASSES -->
+
+     <!-- <div class="bg-orange-400 h-[200px]">Atruba</div>
+    <div class="bg-orange-400 h-[60%]">Atruba</div>
+    <div class="bg-orange-400 h-[20rem]">Atruba</div>
+    <div class="bg-orange-400 h-[80vw]">Atruba</div> -->
+
+
+     <!-- ==================================================================================================================================== -->
+
+     <!-- 6. PADDING -->
+
+     <!-- TAILWIND CLASSES -->
+
+     <!-- p-0   =>    0px
+         p-1   =>    4px
+         p-2   =>    8px
+         p-3   =>    12px
+         p-4   =>    16px
+         p-5   =>    20px
+         p-6   =>    24px
+         p-8   =>    32px
+         p-10   =>    40px
+         p-12   =>    48px
+         p-16   =>    64px
+         p-20   =>    80px
+         p-24   =>    96px
+         p-32   =>    128px
+         p-40   =>    160px
+         p-48   =>    192px
+         p-64   =>    256px       -->
+
+
+     <!--  p-4 → all sides
+          px-4 → left + right
+          py-4 → top + bottom
+          pt-4 → top
+          pr-4 → right
+          pb-4 → bottom
+          pl-4 → left         -->
+
+
+
+     <!-- CUSTOM CLASSES -->
+
+     <p class="p-[14px]"> Atruba</p>
+     <!-- top/bottom,left/right -->
+     <div class="p-[14px_20px] bg-amber-300 inline">Atruba</div>
+     <!-- Top → Right → Bottom → Left -->
+     <div class="p-[14px_14px_14px_14px] inline bg-amber-500">
+          Atruba
+     </div>
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 7. MARGIN -->
+
+
+     <!-- TAILWIND CLASSES -->
+
+     <!-- m-0   =>    0px
+         m-1   =>    4px
+         m-2   =>    8px
+         m-3   =>    12px
+         m-4   =>    16px
+         m-5   =>    20px
+         m-6   =>    24px
+         m-8   =>    32px
+         m-10   =>    40px
+         m-12   =>    48px
+         m-16   =>    64px
+         m-20   =>    80px
+         m-24   =>    96px
+         m-32   =>    128px
+         m-40   =>    160px
+         m-48   =>    192px
+         m-64   =>    256px       -->
+
+
+     <!--  m-4 → all sides
+          mx-4 → left + right
+          my-4 → top + bottom
+          mt-4 → top
+          mr-4 → right
+          mb-4 → bottom
+          ml-4 → left         -->
+
+
+
+     <!-- Negative Margin -->
+
+     <!-- -m-5
+         -mt-5
+         -mb-5
+         -ml-5
+         -mr-5
+         -mx-5
+         -my-5   -->
+
+     <p class="-mt-[20px] text-cyan-500"> Atruba</p>
+
+
+     <!-- CUSTOM CLASSES -->
+
+     <p class="m-[14px]"> Atruba</p>
+     <!-- top/bottom,left/right -->
+     <div class="m-[14px_20px] bg-amber-300 inline">Atruba</div>
+     <!-- Top → Right → Bottom → Left -->
+     <div class="m-[14px_14px_14px_14px] inline bg-amber-500">
+          Atruba
+     </div>
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 8. BG-COLOR CLASSES -->
+
+
+     <!-- CLASSES ON TAILWIND -->
+     <!-- bg-red-50
+         bg-red-100
+         bg-red-200
+         bg-red-300
+         bg-red-400
+         bg-red-500
+         bg-red-600
+         bg-red-700 
+         bg-red-800
+         bg-red-900
+         bg-red-950  -->
+
+
+     <p class="text-center bg-red-400">Atruba</p>
+     <p class="text-center bg-yellow-400">Atruba</p>
+     <p class="text-center bg-cyan-400">Atruba</p>
+
+
+     <!-- CUSTOM CLASSES -->
+
+     <p class="text-center bg-[#733702] text-white">Atruba</p>
+     <p class="text-center bg-[#bd8e64]">Atruba</p>
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 9. TEXT-COLOR CLASSES -->
+
+     <!-- CLASSES ON TAILWIND -->
+     <!-- text-red-50
+         text-red-100
+         text-red-200
+         text-red-300
+         text-red-400
+         text-red-500
+         text-red-600
+         text-red-700 
+         text-red-800
+         text-red-900
+         text-red-950  -->
+
+
+     <p class="text-center text-red-400">Atruba</p>
+     <p class="text-center text-yellow-400">Atruba</p>
+     <p class="text-center text-cyan-400">Atruba</p>
+
+
+     <!-- CUSTOM CLASSES -->
+
+     <p class="text-center text-[#733702]">Atruba</p>
+     <p class="text-center text-[#bd8e64]">Atruba</p>
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 10. FONT-SIZE -->
+
+     <!-- text-xs   =>    12px
+         text-sm   =>    14px
+         text-base   =>    16px
+         text-lg   =>    18px
+         text-xl   =>    20px
+         text-2xl   =>    24px
+         text-3xl   =>    30px
+         text-4xl   =>    36px
+         text-5xl   =>    48px
+         text-6xl   =>    60px
+         text-7xl   =>    72px
+         text-8xl   =>    96px
+         text-9xl   =>    128px -->
+
+     <div class="text-xs">Font size</div>
+
+     <!-- CUSTOM CLASSES -->
+
+     <div class="text-[20px]">Font size</div>
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 11. FONT WEIGHT -->
+
+
+     <!-- font-thin → 100
+          font-extralight → 200 
+          font-light → 300
+          font-normal → 400
+          font-medium → 500
+          font-semibold → 600
+          font-bold → 700
+          font-extrabold → 800
+          font-black → 900       -->
+
+
+     <p class="font-bold">font weight</p>
+     <p class="font-thin">font weight</p>
+
+
+
+     <!-- CUSTOM CLASSES -->
+
+
+     <p class="font-[500]">font weight3</p>
+     <p class="font-[700]">font weight</p>
+     <p class="font-[800]">font weight</p>
+     <p class="font-[1000]">font weight</p>
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 12. BORDER -->
+     <!-- 
+
+     BORDER WIDTH
+
+     border → 1px
+     border-0 → 0px
+     border-2 → 2px
+     border-4 → 4px
+     border-8 → 8px
+
+     SIDES
+
+     border-t → top
+     border-r → right
+     border-b → bottom
+     border-l → left
+     border-x → left + right
+     border-y → top + bottom
+
+     BORDER COLOR
+
+     border-red-500
+     border-blue-500
+     border-green-500
+     border-black
+     border-[#123456]
+
+     STYLE
+
+     border-solid
+     border-dashed
+     border-dotted
+     border-double
+     border-none
+
+     ROUNDING
+
+     rounded-none
+     rounded-sm
+     rounded
+     rounded-md
+     rounded-lg
+     rounded-xl
+     rounded-2xl
+     rounded-3xl
+     rounded-full 
+     
+     rounded-tl-[20px] → top-left = 20px
+     rounded-tr-[10px] → top-right = 10px
+     rounded-br-[30px] → bottom-right = 30px
+     rounded-bl-[5px]  → bottom-left = 5px
+-->
+
+
+
+     <p
+          class="w-[150px] h-[150px] text-center p[50px] border-[9px] border-[#4287f5] border-t-[#42f566] border-x-[#f5f542] border-y-[#f59342] border-r-[#f542e0] rounded-full rounded-b-[0px]">
+          BORDER</p>
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+     <!-- 13. BOX SHADOW -->
+
+     <!-- Tailwind ki Shadow Classes -->
+     <!-- shadow-2xs
+          shadow-xs
+          shadow-sm
+          shadow
+          shadow-md
+          shadow-lg
+          shadow-xl
+          shadow-2xl
+          shadow-none   -->
+
+
+     <!-- SHADOW KA COLOR 🎨 -->
+     <!-- shadow-red-500
+          shadow-[#123456]
+          shadow-black/50  =>  50 = opacity -->
+
+
+     <p
+          class="w-[150px] h-[150px] text-center p[50px] border-[9px] border-[#4287f5] border-t-[#42f566] border-x-[#f5f542] border-y-[#f59342] border-r-[#f542e0] rounded-full rounded-b-[0px] pt-[60px] mt-[20px] shadow-2xl shadow-red-500/50">
+          BOX SHADOW</p>
+
+
+
+
+
+     <!-- CUSTOM CLASSES -->
+
+     <!-- shadow-[0_4px_10px_5px_#000] -->
+     <!-- shadow-[5px_10px_20px_3px_rgba(0,0,0,0.3)] -->
+     <!-- shadow-[inset_0px_10px_500px_100px_black] -->
+     <!-- shadow-[inset_0px_0px_10px_10px_red,0px_0px_50px__black] -->
+
+     <p
+          class="w-[150px] h-[150px] text-center p[50px] border-[9px] border-[#4287f5] border-t-[#42f566] border-x-[#f5f542] border-y-[#f59342] border-r-[#f542e0] rounded-full rounded-b-[0px] pt-[60px] mt-[20px] shadow-[0px_10px_50px_10px_black]">
+          BOX SHADOW</p>
+
+     <div class="bg-white p-20 m-20 shadow-[inset_0px_0px_10px_10px_red,0px_0px_50px__black]">inset shadow</div>
+
+
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+
+     <!-- 14. TEXT ALIGNMENT -->
+
+     <!-- text-left
+     text-center
+     text-right
+     text-justify -->
+
+     <p class="text-center">Text Alignemnt</p>
+     <p class="text-start">Text Alignemnt</p>
+     <p class="text-end">Text Alignemnt</p>
+     <p class="text-justify w-[500px] ml-[100px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non laborum
+          vero cupiditate numquam facere ipsum harum unde. Quas a quis ipsam eligendi?</p>
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 15. TEXT DECORATION -->
+
+     <!-- underline
+          overline
+          line-through
+          no-underline -->
+
+     <p class="underline"> TEXT DECORATION</p>
+     <p class="line-through"> TEXT DECORATION</p>
+     <p class="overline"> TEXT DECORATION</p>
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 16. LINE HEIGHT -->
+
+     <!-- leading-none
+          leading-tight
+          leading-snug
+          leading-normal
+          leading-relaxed
+          leading-loose   -->
+
+
+     <!-- CUSTOM CLASSES -->
+
+     <p class="leading-[100px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam impedit incidunt
+          perspiciatis magnam id consequuntur quam doloremque dolor, unde delectus necessitatibus tenetur deleniti
+          nostrum praesentium quia cumque quis? Perferendis, enim?</p>
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 17. FONT FAMILY -->
+
+     <!-- font-sans
+          font-serif
+          font-mono  -->
+
+     <p class="font-sans">font family</p>
+
+
+     <!-- CUSTOM CLASSES -->
+     <p class="font-['Jost']">font family</p>
+     <p class="font-jost">font family</p>
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 18. DISPLAY -->
+
+     <!-- 
+     block          =>      display: block
+     inline         =>      display: inline
+     inline-block        =>      display: inline-block
+     flex      =>      display: flex
+     grid      =>      display: grid
+     hidden         =>      display: none -->
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 19. FLEXBOX -->
+
+     <!-- 
+
+     flex
+     
+     justify-normal
+     justify-start
+     justify-end
+     justify-center
+     justify-between
+     justify-around
+     justify-evenly
+
+     items-start
+     items-end
+     items-center
+     items-baseline
+     items-stretch
+
+     flex-row
+     flex-row-reverse
+     flex-col
+     flex-col-reverse
+
+     flex-nowrap
+     flex-wrap
+     flex-wrap-reverse
+
+     gap-0 to gap-12
+     gap-x-5    => left right direction gap
+     gap-y-5    => top bottom direction gap
+     gap-[25px]
+     gap-x-[30px]
+     gap-y-[30px]
+
+     -->
+
+
+     <div class=" w-full  flex justify-center gap-2 flex-wrap  ">
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+          <div class="p-[100px] bg-amber-400 border-2">FLEX</div>
+
+     </div>
+
+
+     <!-- ==================================================================================================================================== -->
+
+     <!-- 20. GRID -->
+
+     <!-- 
+     
+     grid
+
+     [GRID-COL]
+
+     grid-cols-1
+     grid-cols-2
+     grid-cols-3
+     grid-cols-4
+     grid-cols-5
+     grid-cols-6
+     grid-cols-7
+     grid-cols-8
+     grid-cols-9
+     grid-cols-10
+     grid-cols-11
+     grid-cols-12
+
+     [COLS-CUSTOM-CLASSES]
+
+     [grid-template-columns:200px_1fr_100px]
+     grid-cols-[200px_1fr_100px]
+
+     [GRID-ROW]
+
+     grid-rows-1
+     grid-rows-2
+     grid-rows-3
+     grid-rows-4
+     grid-rows-5
+     grid-rows-6
+
+     [GAP]
+
+     gap-0 to gap-16
+     gap-0 to gap-12
+     gap-x-5    => left right direction gap
+     gap-y-5    => top bottom direction gap
+     gap-[25px]
+     gap-x-[30px]
+     gap-y-[30px]
+
+     [COLUMN-SPAN] => koi item kitne columns ki jagah lega.
+
+     col-span-2
+     col-span-full
+     col-span-[2]  => CUSTOM CLASS
+
+     [ROW-SPAN] 
+
+     row-span-1
+     row-span-2
+     row-span-3
+     row-span-4
+     row-span-5
+     row-span-6
+     row-span-full
+
+     [SPECIFIC COLUMN POSITION]  =>  Aap item ko specific column se start bhi karwa sakte ho.
+
+     [COL-START]
+
+     col-start-1
+     col-start-2
+     col-start-3
+     ...
+     col-start-13   
+
+     [COL-END]
+
+     col-start-1
+     col-start-2
+     col-start-3
+     ...
+     col-start-13 
+
+     [ROW-START]
+     row-start-1
+     row-start-2
+     row-start-3
+     ...
+     row-start-7  
+     
+     [ROW-END]
+     row-start-1
+     row-start-2
+     row-start-3
+     ...
+     row-start-7 
+
+     [GRID-FLOW]  =>  Ye decide karta hai items grid mein kis direction/order mein place honge.
+     grid-flow-row
+     grid-flow-col
+
+     -->
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 21. POSITION -->
+
+     <!-- static    =>   Default position
+           relative
+           absolute
+           fixed
+           sticky 
+           
+           top-0
+           bottom-0
+           left-0
+           right-0
+           
+           Z-INDEX  =>   Z-index decide karta hai ke overlapping elements mein kaun upar hoga
+           z-0
+           z-10
+           z-20
+           z-30
+           z-40
+           z-50
+           z-auto
+           z-[100]
+           z-[9999]
+
+           -->
+
+
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 22. RESPONSIVE DESIGN -->
+
+     <!-- Responsive Prefixes
+
+        | Prefix | Minimum width |
+        | ------ | ------------: |
+        | `sm:`  |         640px |
+        | `md:`  |         768px |
+        | `lg:`  |        1024px |
+        | `xl:`  |        1280px |
+        | `2xl:` |        1536px |
+
+        0px ───────── 639px  =>  Yani 0–639px ke liye text-sm hi tumhara XS style hai.
+
+        sm  =>  Jab screen 640px ya us se zyada ho, ye style apply karo and same for all
+
+
+
+        ⭐ Custom Breakpoint  =>  Agar tum chahte ho ke 900px se neeche style apply ho:
+
+
+        [METHOD 1]
+
+        <div class="text-4xl min-[900px]:text-xl">   =>   900px+ par kam krega.
+
+        <div class="text-4xl max-[900px]:text-xl">  =>  900px ya us sy neechy kam krega.
+
+        [METHOD 2]
+
+        write this in input.css
+
+        @theme {
+        --breakpoint-xs: 480px;
+        }
+
+        now ypu can use xs as well like others:-
+
+        <div class="text-sm xs:text-lg sm:text-xl">
+        Hello
+       </div>
+
+       Meaning:
+       0–479px       → text-sm
+       480px+        → text-lg
+       640px+        → text-xl
+-->
+
+     <div
+          class="my-[40px] text-center bg-amber-200 sm:bg-amber-700 md:bg-cyan-300 lg:bg-orange-400 xl:bg-pink-400 2xl:bg-stone-400">
+          BREAK-POINTS</div>
+
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+     <!-- 23. OPACITY -->
+
+     <!-- | Tailwind      |             CSS |
+          | ------------- | --------------: |
+          | `opacity-0`   |    `opacity: 0` |
+          | `opacity-5`   | `opacity: 0.05` |
+          | `opacity-10`  |  `opacity: 0.1` |
+          | `opacity-20`  |  `opacity: 0.2` |
+          | `opacity-25`  | `opacity: 0.25` |
+          | `opacity-30`  |  `opacity: 0.3` |
+          | `opacity-40`  |  `opacity: 0.4` |
+          | `opacity-50`  |  `opacity: 0.5` |
+          | `opacity-60`  |  `opacity: 0.6` |
+          | `opacity-70`  |  `opacity: 0.7` |
+          | `opacity-75`  | `opacity: 0.75` |
+          | `opacity-80`  |  `opacity: 0.8` |
+          | `opacity-90`  |  `opacity: 0.9` |
+          | `opacity-100` |    `opacity: 1` |   
+          
+          CUSTOM CLASSES
+
+          opacity-[37%]
+          opacity-[0.37]
+          
+          -->
+
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 24. HOVER -->
+
+     <!-- hover:bg-blue-500 -->
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+
+
+     <!-- 25. FOCUS -->
+
+     <!-- focus:border-blue-500 -->
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+
+     <!-- 26. ACTIVE -->
+
+     <!-- active:bg-blue-700 -->
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+     <!-- 27. DISABLE -->
+
+     <!-- disabled:cursor-not-allowed -->
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 28. TRANSITION -->
+
+     <!-- 
+     
+     transition
+
+     duration-75
+     duration-100
+     duration-150
+     duration-200
+     duration-300
+     duration-500
+     duration-700
+     duration-1000
+     duration-[750ms]  ->  custom class
+
+
+     ease-linear
+     ease-in
+     ease-out
+     ease-in-out
+
+     delay-300
+     delay-[750ms]   ->  custom class
+
+
+
+       -->
+
+     <div class="bg-amber-300 p-5 text-center hover:bg-cyan-400 duration-1000 transition ease-in ">TRANSITION</div>
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 29. TRANSFORM -->
+
+     <!-- scale-50
+          scale-75
+          scale-90
+          scale-95
+          scale-100
+          scale-105
+          scale-110
+          scale-125
+          scale-150
+          scale-200 
+          scale-[1.15]  ->  custom class
+
+          rotate-0
+          rotate-1
+          rotate-2
+          rotate-3
+          rotate-6
+          rotate-12
+          rotate-45
+          rotate-90
+          rotate-180
+          rotate-[27deg]  ->  custom class 
+
+          translate
+          -translate
+          translate-x-10
+          translate-y-10
+          -translate-x-10
+          -translate-y-10
+          translate-x-[10px]  ->  custom class 
+          translate-y-[10px]  ->  custom class 
+
+
+          skew-y-12
+          skew-y-12
+          -skew-y-12
+          -skew-y-12
+          skew-x-[25deg] ->  custom class 
+
+     -->
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 30. GROUP HOVER -->
+
+     <!-- group   ->   to the parent
+          group-hover:scale-110   ->   to the child -->
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+     <!-- 31. GRADIANT -->
+
+
+     <!-- bg-gradient-to-r from-red-500 to-blue-500
+     h-14 bg-linear-to-t from-sky-500 to-indigo-500
+     bg-linear-to-bl from-violet-500 to-fuchsia-500 -->
+
+     <!-- from-red-500
+                ↓
+          starting color
+
+          via-yellow-500
+                ↓
+          middle color
+
+          to-blue-500
+                ↓
+          ending color -->
+
+
+     <!-- FOR TEXT GRADIANT -->
+     <!-- bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent -->
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+     <!-- 32. ANIMATION -->
+
+     <!-- animate-spin
+          animate-ping
+          animate-pulse
+          animate-bounce -->
+
+
+     <!-- CUSTOM ANIMATION -->
+     <!-- 
+
+     @theme {
+    --animate-wiggle: wiggle 1s ease-in-out infinite;
+
+    @keyframes wiggle {
+        0%, 100% {
+            transform: rotate(-3deg);
+        }
+
+        50% {
+            transform: rotate(3deg);
+        }
+    }
+} 
+    -->
+
+
+     <div class=" animate-myanimation pb-[20px]">Animation</div>
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+     <!-- @theme — Complete Custom Classes Example -->
+
+     <!-- watch that all classes in input.css file -->
+
+     <div class=" font-jost bg-primary  m-myspace shadow-card rounded-box text-center animate-pulse">CUSTOM CLASSES
+     </div>
+
+
+
+
+     <!-- ==================================================================================================================================== -->
+
+
+
+
+     <!-- COMPLETED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
