@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* BOX-SHADOW */
+
+  .bs {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    margin: 100px auto;
+
+    /* BOX-SHADOW */
+    /* box-shadow: x-offset y-offset blur spread color; */
+    box-shadow: 5px 2px 10px 0 rgb(0, 0, 0);
+  }
+
+  /* ================================================================================================== */
+
+  /* DROP-SHADOW */
+
+  /* use for png images */
+
+  .ds {
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-image: url(images/pngimg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    /* DROP-SHADOW */
+    /* filter: drop-shadow(x-offset y-offset blur color); */
+    filter: drop-shadow(10px 10px 10px rgb(225, 0, 255));
+
+
+  }
+</style>
+
+<body>
+
+
+  <!-- BOX-SHADOW -->
+
+  <div class="bs"> </div>
+
+  <!-- ================================================= -->
+
+  <!-- DROP-SHADOW -->
+
+  <div class="ds"></div>
+
+</body>
+
+</html>

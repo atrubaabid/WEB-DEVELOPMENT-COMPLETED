@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* PSEUDO CLASS */
+
+  .hvr:hover {
+    color: red;
+  }
+
+  .act:active {
+    color: aqua;
+  }
+
+  .fcs:focus {
+    border: 2px solid blue;
+    outline: none;
+  }
+
+  .fc li:first-child {
+    color: red;
+  }
+
+  .lc li:last-child {
+    color: red;
+  }
+
+  .nc li:nth-child(even) {
+    color: aqua;
+  }
+
+  .check:checked {
+    accent-color: aqua;
+    color: white;
+    width: 20px;
+    height: 20px;
+  }
+
+  .dis:disabled {
+    background-color: lightgray;
+  }
+
+  .visit:visited {
+    color: orange;
+  }
+
+  .aLink:link {
+    color: aqua;
+  }
+
+  /* p:not(.special) {
+    color: red;
+  } */
+
+
+  .fot p:first-of-type {
+    color: purple;
+  }
+
+  .fot p:last-of-type {
+    color: orangered;
+  }
+
+
+  .fot h4:first-of-type {
+    color: purple;
+  }
+
+  .fot h4:last-of-type {
+    color: orangered;
+  }
+
+  .fot p:nth-of-type(2) {
+    color: aqua;
+  }
+
+  .fot h4:nth-of-type(2) {
+    color: yellow;
+  }
+</style>
+
+<body>
+
+  <!-- PSEUDO CLASS -->
+
+  <!-- 1. :hover ⭐  =>  when mouse over the button  -->
+  <button class="hvr">hover</button>
+
+  <!-- 2. :active  =>  when you clicked any element -->
+  <button class="act">active</button>
+
+  <!-- 3. :focus  =>  When the input is clicked or selected with the keyboard  -->
+  <input type="text" placeholder="Enter Name" class="fcs">
+
+  <!-- 4. :first-child  =>  Selects the first child inside a parent. -->
+  <ul class="fc">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ul>
+
+  <!-- 5. :last-child  =>  Selects the Last child inside a parent. -->
+  <ul class="lc">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ul>
+
+  <!-- 6. :nth-child(2)  => Selects a specific child inside a parent-->
+  <ul class="nc">
+    <li>One</li>
+    <li>Two</li>
+    <li>Three</li>
+    <li>Four</li>
+  </ul>
+
+
+  <!-- 7. :checked   =>  Styles checked checkboxes or radio buttons.  -->
+  <input type="checkbox" checked class="check"> I agree
+
+
+  <!-- 8. :disabled  =>  Styles disabled form elements. -->
+  <input type="text" disabled class="dis">
+
+
+
+  <!-- 9. :visited  =>  Styles links that have already been visited. -->
+  <a href="https://example.com" class="visit">Visit</a>
+
+
+
+  <!-- 10. :link  =>  Styles links that have not been visited -->
+  <a href="https://example2.com" class="aLink">linked</a>
+
+
+
+  <!-- 11. :not()  =>  Selects elements that do not match a selector.  -->
+  <p>Paragraph 1</p>
+  <p class="special">Paragraph 2</p>
+  <p>Paragraph 3</p>
+
+
+  <!-- 12 -->
+  <!-- :first-of-type  	Apni tag type ka pehla element select krega
+       :last-of-type	    Apni tag type ka akhri element select krega
+       :nth-of-type(n) 	Sirf us tag type ko count karta hai -->
+
+  <div class="fot">
+    <p>one</p>
+    <h4>one</h4>
+    <p>two</p>
+    <h4>two</h4>
+    <p>three</p>
+    <h4>three</h4>
+  </div>
+
+
+
+
+
+  <!-- :hover → Mouse goes over the element.
+       :active → Mouse is pressing the element.
+       :focus → User clicked or tabbed into an input.
+       :first-child → First item.
+       :last-child → Last item.
+       :nth-child(n) → Numbered item.
+       :checked → Checkbox or radio is selected.
+       :disabled → Element cannot be used.
+       :visited → Link has been opened before.
+       :link → Link has not been opened yet.
+       :not() → Select everything except the specified selector. -->
+
+
+       
+<!-- 
+  💡 Easy Trick
+  child = Sab bachon ko count karo.
+  of-type = Sirf same tag ko count karo.
+
+  Yaad rakhne ka formula:
+
+  :first-child → Parent ka 1st child
+  :last-child → Parent ka last child
+  :nth-child(3) → Parent ka 3rd child
+  :first-of-type → Pehla same tag
+  :last-of-type → Last same tag
+  :nth-of-type(3) → 3rd same tag -->
+
+
+</body>
+
+</html>

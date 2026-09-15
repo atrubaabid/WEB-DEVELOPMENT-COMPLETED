@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: purple;
+            display: grid;
+            place-items: center;
+        }
+
+        .loader {
+            width: 20rem;
+            aspect-ratio: 1;
+            background-color: aqua;
+            border-radius: 50%;
+            position: relative;
+            animation: loader 1s linear infinite;
+
+        }
+
+        .loader::before {
+            content: "";
+            width: 17rem;
+            aspect-ratio: 1;
+            background-color: purple;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+        }
+
+        .loader::after {
+            content: "";
+            background-color: aqua;
+            width: 6rem;
+            aspect-ratio: 1;
+            position: absolute;
+            right: 100px;
+            top: -35px;
+            border-radius: 50%;
+            box-shadow: aqua 0px 0px 10px 10px;
+
+        }
+
+        @keyframes loader {
+
+            0% {
+                rotate: 0;
+            }
+
+            100% {
+                rotate: -360deg;
+            }
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="loader"></div>
+</body>
+
+</html>

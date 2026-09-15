@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins";
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background-color: black;
+        color: white;
+    }
+
+    .weather {
+        background-color: rgba(255, 255, 255, 0.082);
+        padding: 3rem;
+        border-radius: 20px;
+        width: 70%;
+    }
+
+    /* form */
+    form {
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+        & .w-search {
+            width: 100%;
+            margin-inline: auto;
+            padding-left: 3rem;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background-color: black;
+            color: white;
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        & i {
+            left: 15px;
+            position: absolute;
+            font-size: 14px;
+        }
+    }
+
+
+    /* data */
+    .w-details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 4rem;
+        text-align: center;
+
+        & .w-forecast {
+            background-color: black;
+            padding: 0.5rem;
+            width: 100px;
+            border-radius: 30px;
+            margin-inline: auto;
+            margin-top: 1rem;
+        }
+
+
+        & .w-temp {
+            font-size: 30px;
+        }
+
+        & .w-minmax {
+            display: flex;
+            gap: 20px;
+        }
+
+
+    }
+
+    /* other data */
+    .w-info {
+        margin-top: 2rem;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        & .w-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: white;
+            color: black;
+            width: 300px;
+            height: 70px;
+
+
+            & i {
+                font-size: 30px;
+            }
+
+            & .card-data {
+                margin-left: 7px;
+            }
+
+
+        }
+    }
+</style>
+
+<body>
+    <div class="weather">
+
+        <form class="weather_search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="w-search" placeholder="search your city">
+        </form>
+
+        <div class="w-details">
+            <h1 class="city-name"></h1>
+            <p class="date-time"></p>
+
+            <div class="w-data">
+                <p class="w-forecast"></p>
+                <p class="w-icon"></p>
+            </div>
+
+            <p class="w-temp"></p>
+            <div class="w-minmax">
+                <p class="w-min"></p>
+                <p class="w-max"></p>
+            </div>
+
+        </div>
+
+        <!-- weather extra data -->
+
+        <div class="w-info">
+
+
+
+            <div class="w-card">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="card-data">
+                    <p>Feels Like</p>
+                    <p class="w_feelslike"></p>
+                </div>
+            </div>
+
+            <div class="w-card">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="card-data">
+                    <p>Humidity</p>
+                    <p class="w-humidity"></p>
+                </div>
+            </div>
+
+            <div class="w-card">
+                <i class="fa-solid fa-wind"></i>
+                <div class="card-data">
+                    <p>Wind</p>
+                    <p class="w-wind"></p>
+                </div>
+            </div>
+
+            <div class="w-card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div class="card-data">
+                    <p>Pressure</p>
+                    <p class="w-pressure"></p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script>
+        // https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid={API key}
+        // 66f9d5eb1020e310d0f0374665c61254
+
+        let cityName = document.querySelector(".city-name");
+        let dateTime = document.querySelector(".date-time");
+        let forecast = document.querySelector(".w-forecast");
+        let icon = document.querySelector(".w-icon");
+        let temp = document.querySelector(".w-temp");
+        let w_min = document.querySelector(".w-min");
+        let w_max = document.querySelector(".w-max");
+
+        let feelsLike = document.querySelector(".w_feelslike");
+        let humidity = document.querySelector(".w-humidity");
+        let windd = document.querySelector(".w-wind");
+        let pressure = document.querySelector(".w-pressure");
+
+        let search = document.querySelector(".weather_search")
+
+        let city = "karachi";
+
+
+
+        // get the country name by internationalization js api
+        let getCountryname = (country) => {
+            return new Intl.DisplayNames([country], { type: "region" }).of(country)
+        }
+
+
+        // get the date & time name by internationalization js api
+        let getdateTime = (dt) => {
+            let date = new Date(dt * 1000)
+
+            const options = {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "numeric",
+                minute: "numeric",
+            };
+            const formatter = new Intl.DateTimeFormat("en-US", options);
+
+            return formatter.format(date);
+        }
+
+
+        // search input
+        search.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let cityName = document.querySelector(".w-search");
+
+            city = cityName.value;
+            getWeatherData();
+            cityName.value = "";
+
+        })
+
+
+
+        // get weather data
+        const getWeatherData = async () => {
+            // let APIurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=66f9d5eb1020e310d0f0374665c61254`
+            let APIurl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=66f9d5eb1020e310d0f0374665c6125`
+
+            let res = await fetch(APIurl)
+            let data = await res.json();
+            console.log(data);
+
+            const { main, name, weather, wind, sys, dt } = data;
+
+            cityName.innerHTML = `${name}, ${getCountryname(sys.country)}`
+
+            dateTime.innerHTML = getdateTime(dt);
+
+            forecast.innerHTML = weather[0].main;
+
+            icon.innerHTML = ` <img src="http://openweathermap.org/img/wn/${weather[0].icon}@4x.png">`
+
+            temp.innerHTML = `${main.temp}&#176`;
+            w_min.innerHTML = `Min: ${main.temp_max.toFixed()}&#176`;
+            w_max.innerHTML = `Max: ${main.temp_max.toFixed()}&#176`;
+            feelsLike.innerHTML = `${main.feels_like.toFixed(2)}&#176`;
+            humidity.innerHTML = `${main.humidity}%`;
+            windd.innerHTML = `${wind.speed} m/s`;
+            pressure.innerHTML = `${main.pressure} hPa`;
+
+
+        }
+
+        getWeatherData();
+
+        document.querySelector("body").addEventListener("load", getWeatherData())
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

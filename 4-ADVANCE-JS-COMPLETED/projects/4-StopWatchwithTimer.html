@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+        margin-top: 5rem;
+    }
+
+    .stopwatch {
+        width: 50%;
+        border: 2px solid yellow;
+        box-shadow: 0px 0px 10px 2px yellow;
+        padding: 2rem;
+        border-radius: 20px;
+
+        & h1 {
+            color: yellow;
+            text-align: center;
+            font-size: 60px;
+        }
+
+
+        & .showData {
+            font-size: 13px;
+            text-align: center;
+            margin-top: 2rem;
+            color: yellow;
+
+            & p {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .buttons {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        margin-top: 2rem;
+        /* background-color: aqua; */
+    }
+
+    button {
+        box-shadow: 0px 0px 5px 1px yellow;
+        border: 1px solid yellow;
+        background-color: transparent;
+        color: yellow;
+        padding: 0.5rem;
+        border-radius: 100px;
+
+    }
+</style>
+
+<body>
+
+
+    <div class="stopwatch">
+
+        <h1 class="timer">0</h1>
+        <div class="buttons">
+            <button class="start">Start</button>
+            <button class="reset">Reset</button>
+            <button class="stop">Stop</button>
+            <button class="getTime">GetTime</button>
+            <button class="clearTime">ClearTime</button>
+        </div>
+        <div class="showData">
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        let Timer = document.querySelector(".timer");
+        let start = document.querySelector(".start");
+        let reset = document.querySelector(".reset");
+        let stop = document.querySelector(".stop");
+        let getTime = document.querySelector(".getTime");
+        let clearTime = document.querySelector(".clearTime");
+        let showData = document.querySelector(".showData");
+        let time = 0;
+        let stoptime;
+        let data = "";
+
+
+        // START
+        start.addEventListener("click", () => {
+            stoptime = setInterval(() => {
+                Timer.innerHTML = time++
+            }, 1000)
+        })
+
+        // RESET
+        reset.addEventListener("click", () => {
+            time = 0;
+            Timer.innerHTML = time;
+        })
+
+        // STOP
+        stop.addEventListener("click", () => {
+            data += `  <p>The Stop time is ${time - 1}</p>`;
+            showData.innerHTML = data
+            clearInterval(stoptime);
+
+
+        })
+
+        // GETTIME
+        getTime.addEventListener("click", () => {
+
+            if (time <= 0) {
+
+            } else {
+
+                data += `  <p>The Stop time is ${time - 1}</p>`;
+                showData.innerHTML = data;
+            }
+        })
+
+        //CLEARTIME
+        clearTime.addEventListener("click", () => {
+            data = "";
+            showData.innerHTML = "";
+        })
+
+
+
+    </script>
+</body>
+
+</html>

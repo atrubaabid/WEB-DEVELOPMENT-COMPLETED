@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+  /* PSEUDO ELEMENTS */
+
+  .pe {
+    width: 50%;
+    height: 300px;
+    background-color: aqua;
+    margin: 40px auto;
+    padding: 60px;
+  }
+
+  .pe h1 {
+    margin-bottom: 35px;
+    position: relative;
+  }
+
+  /* BEFORE */
+  .pe1::before {
+    content: "\f121";
+    font-family: "font awesome 6 free";
+    position: absolute;
+    top: -22px;
+    font-size: 17px;
+  }
+
+  /* AFTER */
+  .pe1::after {
+    content: "";
+    border: 1px solid red;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+
+  /* FIRST-LETTER */
+  .pe p::first-letter {
+    color: red;
+    font-size: 30px;
+  }
+
+  /* FIRST-LINE */
+  .pe p::first-line {
+    color: purple;
+    text-decoration: underline;
+  }
+
+  /* SELECTION */
+  .pe p::selection {
+    background-color: rgb(252, 134, 234);
+  }
+
+
+
+  /* ----------------------------------------------------------------------- */
+
+
+
+  .b::before {
+    content: "😊 ";
+  }
+
+  h1::after {
+    content: "💖";
+  }
+
+  .fl::first-letter {
+    color: red;
+  }
+
+  .fLine::first-line {
+    color: purple;
+  }
+
+  .select::selection {
+    color: aqua;
+    background-color: gray;
+  }
+
+  input::placeholder {
+    color: red;
+    font-size: 10px;
+  }
+
+  li::marker {
+    color: red;
+    font-size: 20px;
+  }
+
+  .file::file-selector-button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+  }
+</style>
+
+<body>
+  <!-- PSEUDO ELEMENTS -->
+
+
+  <!-- 1. ::before ⭐  =>  add anything before content -->
+  <p class="b">Hello World</p>
+
+
+  <!-- 2. ::after ⭐  =>  add anything after content -->
+  <h1>Hello World</h1>
+
+
+  <!-- 3. ::first-letter  =>  style first letter -->
+  <p class="fl">Hey, i'm Atruba</p>
+
+
+  <!-- 4. ::first-line   =>  style first line -->
+  <p class="fLine">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, aliquam?</p>
+
+
+  <!-- 5. ::selection   =>  when user select the text -->
+  <p class="select">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, aliquam?</p>
+
+
+  <!-- 6. ::placeholder  =>  style input placeholder -->
+  <input type="text" placeholder="Enter Name">
+
+
+  <!-- 7. ::marker  =>  style only list bullets and numbers -->
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+
+
+  <!-- 8. ::file-selector-button   =>  style file input button -->
+
+  <input type="file" class="file">
+
+
+
+  <!-- ------------------------------------------------------------------------------- -->
+
+
+
+
+  <div class="pe">
+    <h1 class="pe1">SYEDA ATRUBA ABID ALI</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, et temporibus, magni, molestias adipisci
+      ducimus a ratione debitis fuga voluptatum enim fugiat.</p>
+    <br>
+    <input type="text" class="pi">
+  </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 90vw;
+        height: 90vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & .rect {
+            display: grid;
+            place-items: center;
+            border: 2px solid yellow;
+            width: 200px;
+            aspect-ratio: 1;
+        }
+
+        & button {
+            background-color: yellow;
+            border: none;
+            padding: 10px;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+    }
+
+    .transition1 {
+        border-radius: 50%;
+        transition: 0.5s;
+        background-color: yellow;
+        translate: -10rem 0;
+    }
+
+    .transition2 {
+        border-radius: 50%;
+        transition: 0.5s;
+        background-color: yellow;
+        translate: 10rem 0;
+
+    }
+
+    .transition3 {
+        translate: -10rem 0;
+    }
+
+    .transition4 {
+        translate: 0rem 0;
+        background-color: transparent;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div>
+        <div class="rect"></div>
+        <button>click me</button>
+    </div>
+
+
+
+    <script>
+
+        let rec = document.querySelector(".rect")
+        let btn = document.querySelector("button")
+
+        // mouseover
+        btn.addEventListener("mouseover", () => {
+            rec.classList.add("transition1")
+            rec.innerHTML = "mouseover"
+        })
+
+        // mouseout
+        btn.addEventListener("mouseout", () => {
+            rec.classList.add("transition2")
+            rec.innerHTML = "mouseout"
+        })
+
+        // mousedown
+        btn.addEventListener("mousedown", () => {
+            rec.classList.add("transition3")
+            rec.innerHTML = "mousedown"
+
+        })
+
+        // mouseup
+        btn.addEventListener("mouseup", () => {
+            rec.classList.add("transition4")
+            rec.innerHTML = "mouseup"
+
+        })
+
+    </script>
+</body>
+
+</html>

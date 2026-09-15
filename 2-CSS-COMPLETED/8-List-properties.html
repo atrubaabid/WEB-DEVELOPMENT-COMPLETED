@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* LIST PROPERTIES */
+
+  .list {
+    width: 50%;
+    height: 50vh;
+    background-color: aqua;
+    margin: auto;
+    padding: 75px 50px;
+    margin-top: 70px;
+  }
+
+  ul {
+    /* LIST STYLE TYPE */
+    list-style-type: disc;
+    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;
+    list-style-type: lower-roman;
+    list-style-type: upper-roman;
+    list-style-type: number;
+    list-style-type: decimal;
+    /* list-style-type: circle; */
+    /* list-style-type: square; */
+    /* list-style: none; */
+
+
+
+    /* LIST STYLE POSITION */
+    list-style-position: inside;
+    list-style-position: outside;
+
+
+
+    /* LIST STYLE IMAGE */
+    /* list-style-image: url(images/pngimg.png) ; */
+
+
+    
+    /* ALL COMBINE */
+    /* list-style: lower-alpha inside url(images/img\ \(1\).jpg); */
+  }
+
+  .list ul li {
+    border: 1px solid red;
+    margin-block: 10px;
+  }
+
+  .list ul li ul {
+    padding-left: 50px;
+  }
+</style>
+
+<body>
+
+  <!-- LIST PROPERTIES -->
+
+  <div class="list">
+    <ul>
+      <li>LIKE</li>
+      <li>SHARE
+        <ul>
+          <li>SHARE</li>
+          <li>SUBSCRIBE</li>
+        </ul>
+      </li>
+      <li>SUBSCRIBE</li>
+    </ul>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

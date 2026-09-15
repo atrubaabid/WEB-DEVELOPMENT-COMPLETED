@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- HEADING TAGS -->
+    <h1>Atruba</h1>
+    <h2>Atruba</h2>
+    <h3>Atruba</h3>
+    <h4>Atruba</h4>
+    <h5>Atruba</h5>
+    <h6>Atruba</h6>
+
+
+
+    <!-- PARAGRAPH TAG -->
+    <p>Hey Cuties</p>
+
+
+
+    <!-- LINE BREAK TAG -->
+    <br>
+
+
+
+    <!-- HORIZONTAL ROW / LINE TAG -->
+    <hr>
+    <hr width="80%" align="center" >
+
+
+
+    <!-- STRONG TAG   //purpose of bold and identify as a important -->
+    <strong>Important</strong>
+
+
+
+    <!-- BOLD TAG -->
+    <b>Welcome</b>
+
+
+
+    <!-- ITALIC STYLE TAG -->
+    <i>Atruba</i>
+
+
+
+    <!-- UNDERLINE TAG -->
+    <u>Atruba</u>
+
+
+    <!-- ======================================================================= -->
+
+
+
+
+    <!-- IMAGE TAG -->
+    <img src="logo.avif" alt="logoimage" width="200" height="200" title="Atruba">
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWUyt4foISLrJfpUSqyFfTZqk8jVQvqrdnAlHqyK4EDw&s"
+        alt="logoimage" width="200" height="200" title="Atruba">
+
+
+    <!-- ======================================================================= -->
+
+
+
+    <!-- LIST TAGS -->
+
+    <!-- order list -->
+
+    <!-- type="A"
+         type="a"
+         type="I"
+         type="i"
+         type="1" -->
+
+    <ol type="a">
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+    </ol>
+
+    <!-- unorder list -->
+
+    <!-- type="circle"
+         type="square" -->
+
+    <ul type="square">
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+    </ul>
+
+
+    <!-- ======================================================================= -->
+
+
+
+    <!-- TABLE -->
+
+    <table border="1" width="500px" height="50" bgcolor="yellow">
+        <thead>
+            <tr align="center">
+                <td>s:no</td>
+                <td>name</td>
+                <td>class</td>
+                <td>section</td>
+                <td>course</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>1</td>
+                <td>Atruba</td>
+                <td>4 sem</td>
+                <td>A</td>
+                <td>BSCS</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ======================================================================= -->
+
+
+    <!-- DIV TAG -->
+
+    <!-- structure 1 -->
+    <div>
+        <div>
+            <div>Home</div>
+            <div>About</div>
+        </div>
+        <div>
+            <div>Gallery</div>
+            <div>Course</div>
+        </div>
+    </div>
+
+
+    <!-- structure 2 -->
+
+
+    <div>
+        <div>Welcome</div>
+        <div>
+            <div>Home</div>
+            <div>About</div>
+            <div>Course</div>
+            <div>Gallery</div>
+        </div>
+        <div>
+            <div>
+                <div>Home</div>
+                <div>About</div>
+                <div>Course</div>
+                <div>Gallery</div>
+            </div>
+            <div>img</div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <!-- ======================================================================= -->
+
+
+
+    <!-- FORM TAG -->
+
+    <fieldset>
+        <legend>Enquiry Form</legend>
+
+        <form action="" method="">
+            <h2></h2>
+            <!-- NAME -->
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter you name" name="fname" pattern="[a-zA-Z]{3,10}"
+                title="Enter your correct name" required minlength="3" maxlength="10">
+
+
+            <br>
+            <!-- EMAIL -->
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter you email" name="femail">
+
+
+            <br>
+            <!-- TEL FOR PHONR NUMBER -->
+            <label for="phone">Phone</label><br>
+            <input type="tel" id="phone" placeholder="Enter you number" name="fphone" pattern="[0-9]{11}"
+                title="Enter 11 digit phone number">
+
+
+            <br>
+            <!-- PASSWORD -->
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" placeholder="Enter you password" name="fpassword">
+
+
+            <br>
+            <!-- TEAXTAREA -->
+            <label for="message">Message</label><br>
+            <textarea name="fmessage" id="message" placeholder="Enter your meassage" rows="5" cols="22"></textarea>
+            <br>
+
+            <!-- RADIO BUTTON -->
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+            <br><br><br>
+
+            <!-- CHECKBOX -->
+            <label for="">Course</label>
+            <input type="checkbox" value="HTML">HTML
+            <input type="checkbox" value="CSS">CSS
+            <input type="checkbox" value="JS">JS
+            <input type="checkbox" value="REACT">REACT
+
+            <br><br><br>
+
+            <!-- CHOOSE FILE -->
+            <label for="photo">Photo</label><br>
+            <input type="file" id="photo" accept=".jpg,.jpeg">
+
+            <br><br><br>
+            <!-- DROPDOWN -->
+            <!-- OPTION -->
+            <label for="a">Country</label><br>
+            <select name="" id="a">
+                <option value="">.....Select Country....</option>
+                <option value="pakistan">pakistan</option>
+                <option value="pakistan">pakistan</option>
+                <option value="pakistan">pakistan</option>
+                <option value="pakistan">pakistan</option>
+                <option value="pakistan">pakistan</option>
+            </select>
+
+            <br><br><br>
+
+            <!-- OPTION-GROUP -->
+            <label for="">Courses</label><br>
+            <select name="" id="">
+                <optgroup label="frontend">
+                    <option value="">HTML</option>
+                    <option value="">CSS</option>
+                    <option value="">JS</option>
+                </optgroup>
+                <optgroup label="backend">
+                    <option value="">PHP</option>
+                    <option value="">NODE</option>
+                    <option value="">MYSQL</option>
+                </optgroup>
+            </select>
+
+            <br><br><br>
+
+
+
+            <!-- NUMBER -->
+            <label for="">Number</label><br>
+            <input type="number" name="" id="" min="1" max="10">
+            <br><br><br>
+
+
+            <!-- DATE -->
+            <label for="">Date</label><br>
+            <input type="date" name="" id="">
+            <br><br><br>
+
+
+            <!-- TIME -->
+            <label for="">Time</label><br>
+            <input type="time" name="" id="">
+            <br><br><br>
+
+
+            <!-- WEEK -->
+            <!-- jan sy selcted week tk week count btaega -->
+            <label for="">Week</label><br>
+            <input type="week" name="" id="">
+            <br><br><br>
+
+            <!-- MONTH -->
+            <label for="">Month</label><br>
+            <input type="month" name="" id="">
+            <br><br><br>
+
+
+            <!-- COLOR -->
+            <label for="">Color</label><br>
+            <input type="color" name="" id="">
+            <br><br><br>
+
+
+            <!-- URL -->
+            <label for="">URL</label><br>
+            <input type="url" name="" id="">
+            <br><br><br>
+
+            <!-- RANGE -->
+            <label for="">Range</label><br>
+            <input type="range" name="" id="">
+            <br><br><br>
+
+
+            <!-- DATALIST -->
+            <!-- jb apna text enter kry tw suggest kerta hy same words -->
+            <label for="">courses</label><br>
+            <input type="text" list="courses">
+            <datalist id="courses">
+                <option value="HTML" />
+                <option value="CSS" />
+                <option value="JS" />
+                <option value="NODE" />
+                <option value="PHP" />
+
+            </datalist>
+            <br><br><br>
+
+
+
+            <!-- BUTTON -->
+            <button>Save</button>
+            <!-- btn is trah sy bhi bn skta hy -->
+            <input type="submit" value="save2">
+
+            <br><br>
+
+            <!-- RESET -->
+            <!-- jb form khali kerna ho -->
+            <button type="reset">Reset2</button>
+            <input type="reset" value="reset">
+
+
+        </form>
+    </fieldset>
+
+    <br><br><br>
+
+    <!-- HTML5 SYMMETRIC ELEMENTS -->
+
+    <header></header>
+    <nav></nav>
+    <aside></aside>
+    <figure></figure>
+    <figcaption></figcaption>
+    <section></section>
+    <article></article>
+    <footer></footer>
+
+    <!-- IFRAME-TAG -->
+
+    <!-- LINK MAP THROUGH GOOGLE MAP -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.619014439648!2d67.121085!3d24.808496100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33b0d874a6617%3A0x14fbef11ad4b34be!2sIlma%20University!5e0!3m2!1sen!2s!4v1780764272347!5m2!1sen!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <br><br><br><br>
+
+
+    <!-- YOUTUBE VIDEO LINK -->
+    <iframe width="678" height="392" src="https://www.youtube.com/embed/AKQRUimN4BE"
+        title="Team up 💪💀 khatarnak jabardast headshot like and subscribe" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br><br><br><br>
+
+
+
+    <!-- WEBSITE LINK -->
+    <iframe src="https://www.wscubetech.com/" frameborder="0" width="100%" height="1000px"></iframe>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

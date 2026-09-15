@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* TRANSITIONS IN CSS */
+
+    /* FOR BTN */
+
+    .btn {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: aqua;
+        padding: 10px;
+        margin: 100px 0;
+
+        /* TRANSITIONS */
+        transition-property: width;
+        transition-duration: 0.5s;
+        /* transition-timing-function: ease-in; */
+        /* transition-timing-function: ease-out; */
+        /* transition-timing-function: ease-in-out; */
+        /* transition-timing-function: ease; */
+        transition-timing-function: linear;
+        transition-delay: 1s;
+
+        /*  all properties */
+        /* property, timing, function,delay */
+
+        /* transition: width 1s ease-in-out 0s; */
+        transition: all 1s ease-in-out 0s;
+    }
+
+    .btn:hover {
+        width: 400px;
+        background-color: purple;
+        color: white;
+    }
+
+    /* FOR-IMAGE */
+
+    .ti {
+        width: 300px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .ti:hover {
+        width: 500px;
+        border: 25px solid red;
+    }
+
+    /* TRANSITION PROJECT */
+
+    .trc {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 9, 55);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+
+    .trci {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 10px solid rgb(2, 186, 186);
+        border-radius: 50%;
+        transition: all 0.5s ease-in;
+
+
+    }
+
+
+    .trc-1:hover {
+        transform: translateX(90vw);
+
+    }
+
+    .trc-2:hover {
+        transform: translateX(90vw);
+
+
+    }
+
+    .trc-3:hover {
+        transform: translateX(90vw);
+
+
+    }
+
+    .trc-4:hover {
+        transform: translateX(90vw);
+
+
+    }
+</style>
+
+<body>
+
+    <!-- TRANSITIONS IN CSS -->
+
+    <!-- <button class="btn">Atruba</button><br>
+    <img src="images/img (1).jpg" alt="" class="ti">  -->
+
+    <!-- TRANSITION PROJECT -->
+
+    <div class="trc">
+        <div class="trci trc-1 "></div>
+        <div class="trci trc-2 "></div>
+        <div class="trci trc-3"></div>
+        <div class="trci trc-4 "></div>
+    </div>
+
+</body>
+
+</html>

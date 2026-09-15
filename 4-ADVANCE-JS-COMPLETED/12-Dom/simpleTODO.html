@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: grid;
+        place-items: center;
+        background-color: burlywood;
+    }
+
+    .inputt {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+
+        & input {
+            width: 70%;
+            margin-right: 9px;
+        }
+    }
+</style>
+
+<body>
+    <h1>TODO APP</h1>
+    <div class="inputt"> <input type="text"> <button>Save</button></div>
+    <div class="allitems"></div>
+
+</body>
+
+<script>
+    let input = document.querySelector("input")
+    let btn = document.querySelector("button")
+    let showdata = document.querySelector(".allitems")
+    let i = 1;
+
+    btn.addEventListener("click", () => {
+        let item = input.value;
+
+        let p = document.createElement("p");
+        p.innerText = `${i}. ${item}`;
+        showdata.append(p)
+        i++;
+
+        input.value = "";
+    })
+
+    showdata.addEventListener("click", (e) => {
+        e.target.remove();
+    })
+</script>
+
+</html>

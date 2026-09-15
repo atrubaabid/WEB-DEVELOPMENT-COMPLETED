@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* BROWSER SCROLL CONTROLL */
+
+    /* when you use same page linking with id */
+
+
+    html {
+        /* direct jump */
+        scroll-behavior: auto;
+        /* smooth behavior */
+        scroll-behavior: smooth;
+    }
+
+    section {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    nav {
+        background: black;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+
+        & a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1rem;
+
+        }
+    }
+</style>
+
+<body>
+
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h1>Home</h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nam nihil voluptatem quidem dicta repellendus sit
+            velit beatae exercitationem adipisci!</p>
+    </section>
+
+    <section id="about">
+        <h1>About</h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nam nihil voluptatem quidem dicta repellendus sit
+            velit beatae exercitationem adipisci!</p>
+
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A nam nihil voluptatem quidem dicta repellendus sit
+            velit beatae exercitationem adipisci!</p>
+
+    </section>
+
+</body>
+
+</html>

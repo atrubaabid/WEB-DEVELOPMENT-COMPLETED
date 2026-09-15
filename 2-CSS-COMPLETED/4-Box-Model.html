@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* BOX-MODEL */
+
+  .boxModel {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+
+    /* [1] */
+    padding: 10px;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* padding-inline: 40px; */
+    /* padding-block: 40px; */
+
+    /* top right bottom left */
+    padding: 100px 200px 300px 400px;
+    /* top - bottom / left- right */
+    padding: 100px 200px;
+
+
+    /* [2] */
+    margin: 30px;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    /* margin-inline: 40px; */
+    /* margin-block: 40px; */
+
+    /* top right bottom left */
+    margin: 100px 200px 300px 400px;
+    /* top - bottom / left- right */
+    margin: 100px 200px;
+
+
+    /* [3] */
+    border: 5px solid red;
+    border-top: 5px solid green;
+    border-left: 5px solid purple;
+    border-bottom: 5px solid orange;
+    border-right: 5px solid brown;
+
+
+    /* [4] */
+    border-radius: 20px;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 40%;
+    border-top-left-radius: 50%;
+
+
+
+    /* if we  use [box-sizing: border-box;] its use given size */
+    box-sizing: border-box;
+
+    /* if we  use [box-sizing: content-box;] its not use given size and take outer space*/
+    box-sizing: content-box;
+
+
+  }
+
+  /* --------------------------------------------- */
+
+  .box {
+    width: 400px;
+    height: 400px;
+
+    /* BORDER */
+    border: 20px solid rgb(2, 0, 111);
+
+    /* https://9elements.github.io/fancy-border-radius/#100.56.46.30--. */
+    /* Fancy-Border-Radius */
+
+    border-radius: 56% 44% 70% 30% / 100% 46% 54% 0%;
+
+    /* https://cssgradient.io/ */
+    /* CSS Gradient */
+
+    background: linear-gradient(90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(75, 4, 4, 1) 0%,
+        rgba(9, 9, 121, 1) 0%,
+        rgba(40, 182, 7, 1) 0%,
+        rgba(41, 185, 5, 1) 0%,
+        rgba(197, 19, 200, 1) 0%,
+        rgba(0, 212, 255, 1) 100%);
+  }
+
+
+  /* --------------------------------------------- */
+
+  /* PRACTICE */
+
+  .box1 {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+
+    border-top: 20px solid purple;
+    border-bottom: 20px solid purple;
+    border-right: 20px solid rgb(13, 255, 0);
+    border-left: 20px solid rgb(13, 255, 0);
+
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  
+</style>
+
+<body>
+
+  <!-- BOX MODEL -->
+
+
+
+  <!--     +---------------------------+
+         |         Margin            |
+         |  +---------------------+  |
+         |  |      Border         |  |
+         |  |  +---------------+  |  |
+         |  |  |    Padding    |  |  |
+         |  |  | +-----------+ |  |  |
+         |  |  | | Content   | |  |  |
+         |  |  | +-----------+ |  |  |
+         |  |  +---------------+  |  |
+         |  +---------------------+  |
+         +---------------------------+     -->
+
+
+  <div class="boxModel">Atruba</div>
+
+  <!-- /* --------------------------------------------- */ -->
+
+  <div class="box"></div>
+
+  <!-- /* --------------------------------------------- */ -->
+
+  <div class="box1"></div>
+
+
+</body>
+
+</html>

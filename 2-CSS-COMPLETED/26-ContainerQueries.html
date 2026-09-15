@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* CONTAINER QUERIES */
+
+  .wrapper {
+    width: 50%;
+    container-name: layoutChange;
+    container-type: inline-size;
+  }
+
+  .card :is(img, p) {
+    width: 100%;
+    color: black;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  @container layoutChange (max-width: 400px) {
+    .card {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<body>
+
+  <!-- CONTAINER QUERIES -->
+
+  <div class="wrapper">
+    <div class="card">
+      <img src="images/img (1).jpg">
+      <p>Product Description</p>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

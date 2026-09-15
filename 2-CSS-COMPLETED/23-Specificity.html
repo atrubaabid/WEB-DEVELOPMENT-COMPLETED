@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* element⭐ Lowest */
+    h1 {
+        color: red;
+    }
+
+
+
+    /* .class ⭐⭐ */
+    .at {
+        color: orange;
+    }
+
+
+    /* #id ⭐⭐⭐ */
+    #at {
+        color: purple;
+    }
+
+
+    /* !important ⭐⭐⭐⭐⭐ Highest */
+    h1 {
+        color: tomato !important;
+    }
+</style>
+
+<body>
+
+    <!-- SPECIFICITY IN CSS   => konsi value zada priority rakhti hy for css  -->
+
+
+    <!--    Selector	             Priority
+           !important        	⭐⭐⭐⭐⭐ Highest
+           Inline CSS	        ⭐⭐⭐⭐
+           #id	                ⭐⭐⭐
+           .class             	⭐⭐
+           element	            ⭐ Lowest -->
+
+
+    <!-- /* priorities */
+    /* 1.0.0.0.0 */ -->
+
+    <!-- /* !important,  inline css,  id selector,  class selector,  element selector */ -->
+
+
+
+
+    <!-- Inline CSS	        ⭐⭐⭐⭐ -->
+    <h1 class="at" id="at" style="color: brown;">Atruba</h1>
+
+
+
+
+</body>
+
+</html>

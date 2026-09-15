@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* TRANSFORM IN CSS */
+  .container {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .img {
+    width: 300px;
+    transition: all 0.5s ease-in;
+  }
+
+  .img:hover {
+    /* TRANSLATE =  x and y axis movments*/
+
+    /* transform: translateX(200px); */
+    /* transform: translateX(-200px); */
+    /* transform: translateY(-200px); */
+    /* transform: translateY(200px); */
+    /* transform: translate(-200px, -200px); */
+    translate: 200px 200px;
+
+
+
+
+    /* SCALE =  double their size */
+
+    /* transform: scale(3); */
+    /* transform: scaleX(0.5); */
+    /* transform: scaleY(0.5); */
+    /* scale: 0.5; */
+    /* scale: 0.5 1; */
+    scale: 1 0.5;
+
+
+
+
+
+    /* ROTATE */
+
+    /* transform: rotate(90deg); */
+    /* transform: rotateX(360deg); */
+    /* transform: rotateY(360deg); */
+    /* transform: rotateZ(360deg); */
+    rotate: 90deg;
+
+
+
+
+
+
+    /* SKEW */
+
+    transform: skew(50deg);
+    /* transform: skew(-50deg); */
+    /* transform: skewX(50deg); */
+    /* transform: skewY(50deg); */
+
+
+
+
+
+    /* PRACTICE */
+
+    /* transform: rotate(360deg);
+    transform-origin: right top; */
+
+
+
+    /* Multiple Transforms */
+    /* transform: translate(-500px) scale(0.5) rotate(40deg); */
+
+    /* translate: -500px; */
+    /* scale: 0.5; */
+    /* rotate: 40deg; */
+
+
+  }
+</style>
+
+<body>
+
+  <!-- TRANSFORM IN CSS -->
+
+  <div class="container">
+
+    <img src="images/img (1).jpg" alt="" class="img">
+
+  </div>
+
+</body>
+
+</html>

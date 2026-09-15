@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* NEW-CSS-FEATURES */
+
+  /* CSS LOGICAL  PROPERTIES (INLINE-BLOCK) */
+
+  .ncssv {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .ncv {
+    border-inline: 5px solid purple;
+    border-block: 5px solid red;
+  }
+
+  /* CSS-NESTING */
+
+  .cssnes {
+    & h1 {
+      color: orange;
+
+      &::before {
+        content: "*";
+      }
+
+      &::after {
+        content: "*";
+      }
+
+      /* WRITING-MODE */
+      /* writing-mode: horizontal-tb; */
+      /* writing-mode: vertical-lr; */
+      writing-mode: vertical-rl;
+      /* writing-mode: sideways-lr; */
+      /* writing-mode: sideways-rl; */
+    }
+
+    & p {
+      color: purple;
+      font-weight: 800;
+    }
+
+    & a {
+      text-decoration: none;
+    }
+
+    & button {
+      background-color: aqua;
+    }
+  }
+</style>
+
+<body>
+
+  <!-- NEW-CSS-FEATURES -->
+
+  <!-- /* CSS LOGICAL  PROPERTIES (INLINE-BLOCK) */ -->
+
+  <div class="ncssv">
+
+    <h1 class="ncv">SYEDA ATRUBA ABID ALI</h1>
+  </div>
+
+
+  <!-- ================================================= -->
+
+  <!-- CSS-NESTING -->
+
+  <div class="cssnes">
+    <h1>Atruba</h1>
+    <p>ABid</p>
+    <a href="">Go</a>
+    <br>
+    <button>Done</button>
+  </div>
+
+
+
+</body>
+
+</html>

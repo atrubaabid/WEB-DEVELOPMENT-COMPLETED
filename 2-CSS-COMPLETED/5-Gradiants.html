@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* GRADIANTS IN CSS */
+
+  .g {
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+
+    /* linear gradiant */
+    background: linear-gradient(to right, red, yellow);
+    background: linear-gradient(to top, red, yellow);
+    background: linear-gradient(to bottom, red, yellow);
+    background: linear-gradient(to left, red, yellow);
+
+    /* repeated linear gradiant */
+    background: repeating-linear-gradient(to top right,
+        purple,
+        rgb(251, 3, 210) 100px);
+  }
+
+  .c {
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+
+    /* radial gradiant */
+    background: radial-gradient(circle, red, yellow);
+
+    /* repeated radial gradiant */
+    background: repeating-radial-gradient(circle, purple, rgb(251, 3, 210) 50px);
+  }
+
+  /* PRACTICE PROJECT */
+
+  .pp {
+    width: 100%;
+    height: 100vh;
+
+    background-image:
+      linear-gradient(to right, rgba(0, 255, 247, 0.5), rgba(0, 0, 255, 0.5)),
+      url(images/img\ \(5\).jpg );
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+</style>
+
+<body>
+
+  <!-- GRADIANTS IN CSS -->
+
+  <div class="g"></div>
+  <div class="c"></div>
+
+
+  <!-- PRACTICE PROJECT -->
+
+  <div class="pp">
+
+  </div>
+
+</body>
+
+</html>

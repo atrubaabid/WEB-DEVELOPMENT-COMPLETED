@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 1. ADD BOOTSTRAP CSS FILE  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <!-- 1. ADD BOOTSTRAP CSS FILE  -->
+    <!-- 2. ADD BOOTSTRAP JS FILE  -->
+
+
+
+    <!-- 3. BOOTSTRAP SCREEN BREAKPOINTS  -->
+
+    <!--   xxl     =>    1400px min --------  limit max 
+            xl     =>    1200px min --------  1399px max
+            lg     =>    992px min  --------  1199px max
+            md     =>    768px min  --------  991px max
+            sm     =>    576px min  --------  767px max
+            xs     =>    0px min    --------  575px max      -->
+
+
+    <div class="text-lg-center text-sm-end  text-start mb-5">
+        <h1>1. BOOTSTRAP SCREEN BREAKPOINTS</h1>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+    <!-- 4. CONTAINER CLASSES -->
+
+    <div class="container-fluid bg-danger mb-5">
+        <div class="container bg-success text-white text-center">
+            <h1>2. CONTAINER CLASSES</h1>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+    <!-- 5. GRID SYSTEM -->
+
+    <!-- you need to give (row) to every grid container to use grids then use these classes to divide containers -->
+
+    <!--
+
+
+    |        xs        |         sm        |         md        |         lg        |         xl        |         xxl       |
+    |                  |                   |                   |                   |                   |                   |
+    |      col-1       |     col-sm-1      |      col-md-1     |     col-lg-1      |    col-xl-1       |     col-xxl-1     |
+    |        to        |         to        |         to        |         to        |        to         |          to       |
+    |      col-12      |     col-sm-12     |     col-md-12     |     col-lg-12     |    col-xl-12      |     col-xxl-12    |   
+    |                  |                   |                   |                   |                   |                   |
+    
+
+
+    -->
+
+
+    <div class="container-fluid text-center mb-5">
+        <h1>3. GRID SYSTEM</h1>
+        <div class="container">
+            ROW-1
+            <div class="row">
+
+                <div class="col-12 col-sm-6 col-lg-3  bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Necessitatibus recusandae
+                    non excepturi sint reiciendis? Architecto sint itaque voluptatem illo, porro rem molestiae.
+                    Accusantium aliquam magni odit eaque quasi laudantium alias animi sit voluptates.</div>
+
+                <div class="col-12 col-sm-6 col-lg-3 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Necessitatibus recusandae
+                    non excepturi sint reiciendis? Architecto sint itaque voluptatem illo, porro rem molestiae.
+                    Accusantium aliquam magni odit eaque quasi laudantium alias animi sit voluptates.</div>
+
+                <div class="col-12 col-sm-6 col-lg-3  bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Necessitatibus recusandae
+                    non excepturi sint reiciendis? Architecto sint itaque voluptatem illo, porro rem molestiae.
+                    Accusantium aliquam magni odit eaque quasi laudantium alias animi sit voluptates.</div>
+
+                <div class="col-12 col-sm-6 col-lg-3 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Necessitatibus recusandae
+                    non excepturi sint reiciendis? Architecto sint itaque voluptatem illo, porro rem molestiae.
+                    Accusantium aliquam magni odit eaque quasi laudantium alias animi sit voluptates.</div>
+
+            </div>
+
+            ROW-2
+
+            <div class="row">
+                <div class="col-4 bg-info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
+                    est nemo similique, nostrum nisi provident architecto sapiente sit minima iusto, laboriosam
+                    consequatur!</div>
+
+                <div class="col-8 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                    minus repellendus tenetur ea. Non animi, voluptatibus ut vero dolor itaque repudiandae veritatis,
+                    voluptas quos expedita ab voluptate quasi veniam? Optio quisquam suscipit repellat.</div>
+            </div>
+
+            ROW-3
+
+            <div class="row">
+                <div class="col-3 bg-success">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus modi
+                    accusantium aut doloremque perspiciatis consequatur! Consequuntur eos facilis ab voluptate nesciunt
+                    distinctio!</div>
+                <div class="col-6 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit at
+                    repudiandae natus
+                    reiciendis? Aliquam dolores quibusdam nesciunt voluptatibus explicabo? Ut, eum suscipit.</div>
+                <div class="col-3 bg-success">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus modi
+                    accusantium aut doloremque perspiciatis consequatur! Consequuntur eos facilis ab voluptate nesciunt
+                    distinctio!</div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+
+    <!-- 6. AUTO-LAYOUT COLUMNS-->
+
+    <!-- if you have odd number containers so you can arrange that all with the help of row -->
+
+
+    <div class="container-fluid text-center mb-5">
+        <h1> 4. AUTO-LAYOUT COLUMNS</h1>
+        <div class="container">
+            ROW 4
+            <div class="row row-cols-2 row-cols-sm-4 row-cols-lg-6 ">
+                <div class="col">
+                    <div class=" border border-2 border-primary">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class=" border border-2 border-primary">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class=" border border-2 border-primary">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class=" border border-2 border-primary">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class=" border border-2 border-primary">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class=" border border-2 border-primary">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class=" border border-2 border-primary">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class=" border border-2 border-primary">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class=" border border-2 border-primary">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+
+    <!-- 7. GUTTER CLASSES  -->
+
+    <!-- Gutters are the empty spaces between columns. They help keep the content properly spaced and aligned in the Bootstrap grid. -->
+
+    <!-- gx  =>  padding of container left right     |    gy  =>   margin of container top bottom    
+                     gx-0  =>  0px remove padding    |             gy-0  =>  0px remove margin
+                     gx-1  =>  2px                   |             gy-1  =>  2px
+                     gx-2  =>  4px                   |             gy-2  =>  4px
+                     gx-3  =>  8px                   |             gy-3  =>  8px
+                     gx-4  =>  12px                  |             gy-4  =>  12px
+                     gx-5  =>  24px                  |             gy-5  =>  24px                                       -->
+
+
+
+    <!-- you can use both gx and gy with the help of just g like :
+                                g-1
+                                g-2
+                                g-3
+                                g-4
+                                g-5        -->
+
+
+
+    <div class="container-fluid text-center mb-5">
+        <h1> 5. GUTTER CLASSES</h1>
+        <div class="container">
+            ROW 5
+            <div class="row row-cols-2 row-cols-sm-4 row-cols-lg-6 g-3">
+
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+                <div class="col ">
+                    <div class="bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero beatae
+                        mollitia, minus deserunt
+                        tempora fugiat! Deserunt facere quis adipisci nostrum illum. Provident?</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+    <!-- 8. USING SPACING UTILITY CLASSES (PADDING & MARGIN) -->
+
+
+
+    <!-- MARGIN
+         m    ->   all direction                                           | m-0  -> 0px  |
+         my   ->   top bottom                                              | m-1  -> 4px  |
+         mx   ->   left right              | FOR THESE ALL |               | m-2  -> 8px  |
+         mt   ->   top          =====>     |  WE HAVE THAT |     ====>     | m-3  -> 16px |
+         mb   ->   bottom                  |  ALL CLASSES  |               | m-4  -> 24px |
+         ms   ->   left                                                    | m-5  -> 48px |
+         me   ->   right 
+         mx-auto  ->  margin auto                                                                     -->
+
+
+
+    <!-- PADDING
+         p    ->   all direction                                           | p-0 -> 0px  |
+         py   ->   top bottom                                              | p-1 -> 4px  |
+         px   ->   left right              | FOR THESE ALL |               | p-2 -> 8px  |
+         pt   ->   top          =====>     |  WE HAVE THAT |     ====>     | p-3 -> 16px |
+         pb   ->   bottom                  |  ALL CLASSES  |               | p-4 -> 24px |
+         ps   ->   left                                                    | p-5 -> 48px |
+         pe   ->   right    
+                                                                                   -->
+
+
+
+    <!-- SCREEN ORIENTED CLASSES
+         mt-lg-4   ,   mt-sm-3   ,   mt-2
+         pt-lg-4   ,   pt-sm-3   ,   pt-2    -->
+
+
+
+    <div class="container-fluid mb-5">
+        <div class="container text-center">
+            <h1>6. MARGIN & PADDING</h1>
+            <div class="bg-success-subtle text-center p-3 m-3 p-lg-5 m-lg-5 ">Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit.
+                Est id
+                earum commodi debitis nesciunt facilis optio voluptatum hic incidunt at dolor quos nam, assumenda
+                suscipit ad, aperiam amet repellendus omnis delectus a officiis eligendi? Esse aliquid ducimus,
+                reprehenderit laborum eligendi sed saepe ab sunt.</div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+    <!-- 9. RESPONSIVE IMAGE  -->
+
+    <!-- just you need to give (img-fluid) class to image and then it takes all the space of the div -->
+
+
+
+    <div class="container-fluid mb-5">
+        <div class="container text-center">
+            <h1> 7. RESPONSIVE IMAGE</h1>
+            <div class="row justify-content-center">
+                <div class="col-9">
+                    <img src="./images/img (3).jpg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+    <!-- 10. FLEXBOX CLASSES IN BOOTSTRAP -->
+
+
+    <!-- d-flex ,  flex-column  ,  justify-content-center  ,  align-items-center  ,  flex-wrap  ,  gap-3  ,  align-self-center  ,  flex-grow-1  ,  flex-shrink-1  ,  order-2    -->
+
+
+
+    <div class="container-fluid text-center mb-5">
+        <h1> 8. FLEX-BOX</h1>
+        <div class="container text-center">
+            flex row 1
+            <div class="row justify-content-center">
+
+                <div class="col-4">
+
+                    <div
+                        class="pb-5 px-4 bg-warning-subtle d-flex flex-column align-items-center justify-content-center text-center ">
+                        <img src="./images/pngimg.png" alt="" class="img-fluid">
+                        <h2>Your card info</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quasi ipsa enim repudiandae
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-4">
+
+                    <div
+                        class="pb-5 px-4 bg-warning-subtle d-flex flex-column align-items-center justify-content-center text-center ">
+                        <img src="./images/pngimg.png" alt="" class="img-fluid">
+                        <h2>Your card info</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quasi ipsa enim repudiandae
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            flex row 2
+            <div class="row justify-content-center">
+                <div class="col-11">
+
+                    <div class=" py-5 allboxes bg-success d-flex justify-content-evenly ">
+
+                        <div class="box bg-warning">Lorem, ipsum dolor.</div>
+                        <div class="box bg-info">Lorem, ipsum dolor.</div>
+                        <div class="box bg-warning">Lorem, ipsum dolor.</div>
+                        <div class="box bg-info">Lorem, ipsum dolor.</div>
+                        <div class="box bg-warning">Lorem, ipsum dolor.</div>
+                        <div class="box bg-info">Lorem, ipsum dolor.</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+    <!-- 11. TYPOGRAPHY AND COLOR CLASSES -->
+
+    <!-- 1. TEXT -->
+    <!-- 1.  text-center  ,  text-start  ,  text-end 
+         2. text-lowercase  ,  text-uppercase  ,  text-capitalize.  -->
+
+
+    <!-- 2. FONT-SIZE -->
+    <!-- fs-1  ,  fs-2  ,  fs-3  ,  fs-4  ,  fs-5   ,  fs-6 -->
+
+
+    <!-- 3. Line height -->
+    <!-- lh-1  ,  lh-sm  ,  lh-base  ,  lh-lg -->
+
+
+    <!-- 4. Text decoration -->
+    <!-- text-decoration-underline  ,  text-decoration-line-through  ,  text-decoration-none -->
+
+    <!-- 5. Colors -->
+    <!-- text-primary  ,  text-secondary  ,  text-success  ,   text-danger  -->
+
+
+    <!-- 6. Background color -->
+    <!-- bg-primary , bg-secondary , bg-success , bg-danger , bg-warning , bg-info , bg-dark , bg-light , bg-black , bg-white  , bg-transparent -->
+
+
+
+
+
+
+    <div class="container-fluid text-center mb-5">
+        <h1>9. TYPOGRAPHY AND COLOR CLASSES</h1>
+        <div
+            class="container mt-5 text-center text-uppercase fs-4 lh-lg text-decoration-underline text-primary bg-light">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione enim sunt officiis assumenda velit sit, ad
+            eum. Delectus pariatur, facere officia est eos, esse soluta eligendi unde consectetur nulla maxime repellat
+            ipsum eaque. Quos, ducimus suscipit reiciendis, iusto unde inventore aperiam, impedit esse animi dolore
+            culpa rem atque! Delectus voluptatum voluptas odit eius aut veritatis eveniet, unde nulla possimus quae
+            molestiae suscipit expedita consequatur ducimus accusantium.
+        </div>
+    </div>
+
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- 12. SHADOW IN BOOTSTRAP -->
+
+    <!-- shadow-none  ,  shadow-sm  ,  shadow  ,  shadow-lg -->
+
+    <div class="container-fluid mb-5">
+        <div class="container text-center">
+            <h1>10. SHADOW IN BOOTSTRAP</h1>
+            <div class="row justify-content-center">
+
+                <div class="col-2 bg-white m-2 p-3 shadow-none">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, dolor?</div>
+                <div class="col-2 bg-white m-2 p-3 shadow-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, dolor?</div>
+                <div class="col-2 bg-white m-2 p-3 shadow ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, dolor?</div>
+                <div class="col-2 bg-white m-2 p-3 shadow-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Omnis, dolor?</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- 13. Buttons in bootstrap -->
+
+
+    <div class="container-fluid text-center mb-5">
+        <h1>11. Buttons</h1>
+        <div class="container">
+            <div class="row">
+                <p class="text-center">Variants Button</p>
+                <div class="col-12 d-flex gap-3 justify-content-evenly">
+
+                    <button class="btn btn-primary">btn-primary</button>
+                    <button class="btn btn-secondary"> btn-secondary </button>
+                    <button class="btn btn-success"> btn-success</button>
+                    <button class="btn btn-danger"> btn-danger</button>
+                    <button class="btn btn-warning">btn-warning </button>
+                    <button class="btn btn-info"> btn-info</button>
+                    <button class="btn btn-light">btn-light </button> <button class="btn btn-dark">btn-dark</button>
+
+                </div>
+            </div>
+            <div class="row">
+                <p class="text-center">Outline buttons</p>
+
+                <div class="col-12 d-flex gap-3 justify-content-evenly">
+
+                    <button class="btn btn-outline-primary">btn-primary</button>
+                    <button class="btn btn-outline-secondary"> btn-secondary </button>
+                    <button class="btn btn-outline-success"> btn-success</button>
+                    <button class="btn btn-outline-danger"> btn-danger</button>
+                    <button class="btn btn-outline-warning">btn-warning </button>
+                    <button class="btn btn-outline-info"> btn-info</button>
+                    <button class="btn btn-outline-light">btn-light </button> <button
+                        class="btn btn-dark">btn-dark</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- 14. Forms in bootstrap -->
+
+
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-11 col-12 shadow-lg p-5">
+                    <h1 class="text-center">12. Forms</h1>
+
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- 15. Modal in bootstrap -->
+
+
+
+    <div class="container-fluid mb-5">
+
+        <div class="container">
+            <h1 class=" text-center">13. Modal</h1>
+            <div class="row justify-content-center">
+                <div class="col-3  d-flex justify-content-center">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body m-5">
+
+                                    <form>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                        </div>
+
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- 16. Navbar in bootstrap -->
+
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <h1 class="text-center">14. Navbar</h1>
+            <div class="row">
+                <div class="col-12">
+
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+                        <div class="container-fluid bg-black ">
+
+                            <a class="navbar-brand text-white" href="#">MY LOGO</a>
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-white text-center" aria-current="page"
+                                            href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white text-center" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white text-center" href="#">Pricing</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- 17. Offcanvas in bootstrap -->
+
+
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <h1 class="text-center">15. Offcanvas</h1>
+            <div class="row ">
+                <div class="col-12 d-flex justify-content-center">
+
+                    <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        Link with href
+                    </a> -->
+
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Offcanvas
+                    </button>
+
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas Logo Here</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-center " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-center" href="#">Pricing</a>
+                            </li>
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+    <!-- 18. Carousel in Bootstrap -->
+
+
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <h1 class="text-center">16. Carousel </h1>
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/img (1).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/img (2).jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/img (3).jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+    <!-- 19. Accordion in Bootstrap -->
+
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <h1 class="text-center">17. Accordion</h1>
+            <div class="row justify-content-center">
+                <div class="col-10">
+
+
+
+                    <div class="accordion" id="accordionExample">
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion Item #1
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item’s accordion body.</strong> It is shown by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Item #2
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item’s accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Item #3
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item’s accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It’s also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- 20. Bootstrap Tabbing, Tooltip, Popover -->
+
+    <div class="container-fluid mb-5 fs-4">
+        <div class="container">
+            <h1 class="text-center">18. Bootstrap Tabbing, Tooltip, Popover </h1>
+
+            <h4 class="text-center">Tabbing</h4>
+            <div class="row">
+                <div class="col-12">
+
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">Home</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Profile</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Contact</button>
+                            <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled"
+                                aria-selected="false" disabled>Disabled</button>
+                        </div>
+                    </nav>
+
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active fs-4" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis magnam porro maiores perferendis consequuntur sit, illum illo
+                            nihil eveniet itaque. Ab, dolores.</div>
+                        <div class="tab-pane fade fs-4" id="nav-profile" role="tabpanel"
+                            aria-labelledby="nav-profile-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis magnam porro maiores perferendis consequuntur sit, illum illo
+                            nihil eveniet itaque. Ab, dolores.</div>
+                        <div class="tab-pane fade fs-4" id="nav-contact" role="tabpanel"
+                            aria-labelledby="nav-contact-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis magnam porro maiores perferendis consequuntur sit, illum illo
+                            nihil eveniet itaque. Ab, dolores.</div>
+                        <div class="tab-pane fade fs-4" id="nav-disabled" role="tabpanel"
+                            aria-labelledby="nav-disabled-tab" tabindex="0">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Veritatis magnam porro maiores perferendis consequuntur sit, illum illo
+                            nihil eveniet itaque. Ab, dolores.</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <h4 class="text-center mt-5">Tooltip</h4>
+            <div class="row justify-content-center">
+                <div class="col-12 d-flex flex-column">
+
+                    <button class=" btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="here you give your guidance">Tooltip
+                        Checking</button> <br>
+
+                    <h4 class="text-center">Popover</h4>
+
+                    <button class=" btn btn-success" data-bs-toggle="popover" data-bs-placement="right"
+                        data-bs-custom-class="custom-popover" data-bs-title="My popover"
+                        data-bs-content="This popover is themed via CSS variables and its mine.">Popover
+                        Checking</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- 21. Positions in Bootstrap -->
+
+    <!-- position-static ,  position-relative  ,  position-absolute  ,  position-fixed  ,  position-stick -->
+    <!--  top-0 -> 0
+          top-50 -> 50%
+          top-100 -> 100%    -->
+
+    <!-- other positions values of the top, bottom, left, right you can add by your own css -->
+
+
+
+
+
+
+    <!-- COMPLETED -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 2. ADD BOOTSTRAP JS FILE  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- tooltip -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <!-- popover -->
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+
+</html>

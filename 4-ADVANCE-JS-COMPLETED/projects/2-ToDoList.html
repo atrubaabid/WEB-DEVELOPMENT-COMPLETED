@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        color: white;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .todo {
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+
+        & div {
+            margin-top: 1rem;
+        }
+
+        & div input {
+            border-radius: 20px;
+            padding: 0.2rem 1rem;
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+
+
+
+        }
+
+        .btn {
+            border-radius: 20px;
+            padding: 0.2rem 1rem;
+            background-color: white;
+            border: 2px solid white;
+            color: black;
+            margin-left: 1rem;
+
+        }
+
+
+    }
+
+    .btn {
+        border-radius: 20px;
+        padding: 0.2rem 1rem;
+        background-color: white;
+        border: 2px solid white;
+        color: black;
+        margin-left: 1rem;
+        font-weight: 500;
+
+    }
+
+    .btn2 {
+        border-radius: 20px;
+        padding: 0.2rem 1rem;
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+        margin-left: 1rem;
+        font-weight: 500;
+
+    }
+
+    .todolist {
+        width: 80%;
+        height: 50vh;
+        margin-top: 2rem;
+        margin-inline: auto;
+        background-color: rgba(255, 255, 255, 0.151);
+        border-radius: 20px;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        padding: 2rem;
+        height: fit-content;
+
+
+
+        & p {
+            font-weight: 700;
+            padding: 0.5rem 1.5rem;
+            width: 100%;
+            color: black;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+
+
+        }
+    }
+</style>
+
+<body>
+
+
+    <div class="todo">
+        <h1>TODO APP</h1>
+        <div>
+            <input type="text" id="myinput" placeholder="type to save item....">
+            <button class="btn">Save</button>
+        </div>
+    </div>
+
+    <div class="todolist">
+
+
+    </div>
+
+
+
+
+    <script>
+        let input = document.querySelector("#myinput");
+        let btn = document.querySelector(".btn");
+        let showitems = document.querySelector(".todolist")
+
+        let itemArr = JSON.parse(localStorage.getItem("todo")) || [];
+
+
+        btn.addEventListener("click", () => {
+            let item = input.value;
+            itemArr.push(item)
+            localStorage.setItem("todo", JSON.stringify(itemArr));
+            showData()
+            input.value = "";
+        })
+
+
+        let showData = () => {
+            let showItem = "";
+            itemArr.forEach((item, i) => {
+                showItem += ` <p> ${i + 1} ${item} <button class="btn2" data-id="${i}">Delete</button></p>`
+            });
+            showitems.innerHTML = showItem
+        }
+
+        showData()
+
+
+        // DELETE
+        showitems.addEventListener("click", (e) => {
+            if (e.target.tagName == "BUTTON") {
+                let idx = e.target.getAttribute("data-id");
+                itemArr.splice(idx, 1);
+                localStorage.setItem("todo", JSON.stringify(itemArr));
+                showData()
+            }
+
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

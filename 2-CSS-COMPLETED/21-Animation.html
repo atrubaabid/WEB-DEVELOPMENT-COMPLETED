@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* ANIMATION IN CSS */
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(0, 9, 55);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        perspective: 1000px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 10px solid rgb(2, 186, 186);
+        border-radius: 50%;
+    }
+
+    .trc-1 {
+        animation-name: lefttoright;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1s;
+        /* animation-iteration-count: 10; */
+        /* animation-direction: normal; */
+        /* animation-direction: reverse; */
+        /* animation-direction: alternate; */
+        /* animation-direction: alternate-reverse; */
+
+
+        /* SHORTHAND */
+        animation: lefttoright 1s linear 0s infinite alternate;
+    }
+
+
+    /* [1] */
+    /* @keyframes lefttoright {
+        from {
+            translate: 0%;
+        }
+
+        to {
+            translate: calc(90vw - 100px);
+
+        }
+
+    } */
+
+
+
+    /* [2] */
+    @keyframes lefttoright {
+        0% {
+            translate: 0%;
+            background-color: red;
+        }
+
+        50% {
+
+            translate: 50vw 50vh;
+            background-color: yellow;
+
+
+        }
+
+        100% {
+            translate: calc(90vw - 100px);
+            background-color: purple;
+
+
+        }
+
+    }
+</style>
+
+<body>
+
+    <!-- ANIMATION IN CSS -->
+
+    <div class="container">
+        <div class="box trc-1 "></div>
+        <div class="box trc-2 "></div>
+        <div class="box trc-3"></div>
+        <div class="box trc-4 "></div>
+    </div>
+
+</body>
+
+</html>

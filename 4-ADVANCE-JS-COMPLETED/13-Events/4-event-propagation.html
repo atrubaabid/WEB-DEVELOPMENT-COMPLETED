@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & h1 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .outer {
+        width: 60%;
+        aspect-ratio: 1;
+        background-color: aqua;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .middle {
+        width: 65%;
+        aspect-ratio: 1;
+        background-color: aqua;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner {
+        width: 55%;
+        aspect-ratio: 1;
+        background-color: aqua;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .outer:hover {
+        background-color: chartreuse;
+    }
+
+    .middle:hover {
+        background-color: purple;
+    }
+
+    .inner:hover {
+        background-color: rgb(252, 0, 42);
+    }
+</style>
+
+<body>
+    <h1>Event Propagation</h1>
+
+    <div class="outer">
+        OUTER
+        <div class="middle">
+            MIDDLE
+            <div class="inner">
+                INNER
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // =================================== 
+        //  Event Propagation: 
+        // ===================================
+
+        // Event Propagation ka matlab hai jab kisi element par event (jaise click) hota hai, to woh event dusre parent elements tak bhi travel karta hai.
+
+        // Iske 3 phases hote hain:
+        // 1. Capturing Phase ⬇️     =>   Event upar se neeche aata hai.
+
+        // HTML
+        //  ↓
+        // Body
+        //  ↓
+        // Div
+        //  ↓
+        // Button   
+
+        // ----------------------------------------------
+
+        // 2. Target Phase 🎯       =>  Event us element par pahunchta hai jis par click kiya gaya.
+
+        // Button (Click)
+
+        // ----------------------------------------------
+
+
+        // 3. Bubbling Phase ⬆️      =>  by default Event neeche se upar jata hai.
+
+        // Button
+        //  ↑
+        // Div
+        //  ↑
+        // Body
+        //  ↑
+        // HTML
+
+        // ----------------------------------------------
+
+
+        // event.stopPropagation()  =>  Ye event ko aage travel karne se rok deta hai.
+
+        // ----------------------------------------------
+
+        // Capturing = Upar ➜ Neeche ⬇️
+        // Target = Jis element par click hua 🎯
+        // Bubbling = Neeche ➜ Upar ⬆️
+        // stopPropagation() = Event ko aage jane se rok do. 🚫
+
+
+        let outer = document.querySelector(".outer")
+        let middle = document.querySelector(".middle")
+        let inner = document.querySelector(".inner")
+
+        // By default is the bubbling phase
+
+        outer.addEventListener("click", (e) => {
+
+            console.table([
+                {
+                    description: "I am Outer",
+                    Target: e.target,
+                    CurrentTarget: e.currentTarget,
+                }
+            ])
+
+        }, true)
+
+
+        middle.addEventListener("click", (e) => {
+
+            console.table([
+                {
+                    description: "I am Middle",
+                    Target: e.target,
+                    CurrentTarget: e.currentTarget,
+                }
+            ])
+            // e.stopPropagation();
+
+        }, true)
+
+        inner.addEventListener("click", (e) => {
+
+            console.table([
+                {
+                    description: "I am Inner",
+                    Target: e.target,
+                    CurrentTarget: e.currentTarget,
+                }
+            ])
+            // e.stopPropagation();
+
+        }, true)
+
+
+
+    </script>
+</body>
+
+</html>

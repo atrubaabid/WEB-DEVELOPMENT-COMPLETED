@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* Functional Pseudo-classes */
+  /* CSS :is :has :where :not */
+
+  /* IS */
+
+  .parent :is(h1, h2, h3) {
+    color: chartreuse;
+  }
+
+
+
+
+  /* WHERE */
+  /* same as :is but specificity 0 */
+
+  .parent :where(h1, h2, h3):hover {
+    color: crimson;
+  }
+
+
+
+  /* NOT   => in easy words Is element ko chhor do.*/
+  button:not(.prim) {
+    color: red;
+  }
+
+
+  /* HAS = Agar parent ke andar ye child ho to parent select karo*/
+
+
+  /* ex1 */
+  .parent:has([type="checkbox"]:checked) label {
+    color: red;
+  }
+
+
+  /* ex2 */
+  .parent:has(input:checked) {
+    color: red;
+    background-color: aqua;
+  }
+
+
+  /* ex3 */
+  .parent:has(p) {
+    background-color: orange;
+  }
+
+
+
+  /* ACCENT COLOR */
+  /* ex1 */
+  input[type="checkbox"] {
+    accent-color: aqua;
+    width: 20px;
+    aspect-ratio: 1;
+  }
+
+  /* ex2 */
+  input:checked {
+    accent-color: aqua;
+    width: 30px;
+    aspect-ratio: 1;
+  }
+</style>
+
+<body>
+
+
+  <!-- CSS :is :has :where :not -->
+
+  <div class="parent">
+
+    <!-- IS  & WHERE-->
+
+
+    <h1>Atruba</h1>
+    <h2>Atruba</h2>
+    <h3>Atruba</h3>
+    <br>
+
+    <!-- NOT -->
+
+    <button>save</button>
+    <button class="prim">save</button>
+    <button>save</button>
+    <button class="prim">save</button><br><br>
+
+    <!-- HAS -->
+
+    <input type="checkbox" id="11" class="zzz">
+    <label for="11">check the box</label>
+
+
+    <p>Atruba</p>
+
+
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>

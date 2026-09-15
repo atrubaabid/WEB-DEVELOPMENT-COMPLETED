@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <header class="container header">
+
+        <div class="top-header">
+
+            <div>
+                <p>Free shipping, 30-day return or refund guarantee.</p>
+            </div>
+
+            <div class="sign_in_up">
+                <button class="btn">Sign in</button>
+                <button class="btn1">Sign up</button>
+            </div>
+
+
+        </div>
+
+        <div class="main-header container2">
+
+            <div class="logo">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Ecommerce</p>
+            </div>
+
+
+            <div class="navbar">
+
+                <a href="">HOME</a>
+                <a href="">ABOUT</a>
+                <a href="">PRODUCTS</a>
+                <a href="">CONTACT</a>
+                <a href="./cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i><span id="cart">0</span></a>
+            </div>
+
+
+        </div>
+
+
+
+
+
+    </header>
+    <!-- HEADER END -->
+
+    <!-- CARTS SECTION START -->
+    <section class="carts-section">
+        <div class="container2 cart-products-show ">
+
+
+
+        </div>
+
+        <template class="cart-product">
+            <div class="cart-card" id="cardValue">
+
+                <p class="title"></p>
+                <div class="cart-img"><img class="cartProd-img" src="" alt=""></div>
+                <h3 class="name"></h3>
+                <p class="price"></p>
+
+                <div class="pieces">
+                    <p class="increment">+</p>
+                    <p class="product-piece">1</p>
+                    <p class="decrement">-</p>
+                </div>
+
+                <button class="btn1 remove-cart-prods">Remove</button>
+
+
+            </div>
+        </template>
+
+
+        <div class="total">
+            <div class="total-summary">
+                <p>Selected Offer Summary</p>
+                <div class="sub-total">
+                    <p>Sub Total:</p>
+                    <p class="sub-total-price"></p>
+                </div>
+
+                <div class="tax">
+                    <p>Tax:</p>
+                    <p>Rs 50</p>
+                </div>
+
+                <hr>
+
+                <div class="final-total">
+                    <p>Final Total:</p>
+                    <p class="final-total-price"></p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </section>
+    <!-- CARTS SECTION END -->
+
+    <!-- FOOTER-START -->
+
+    <footer class="container footer-section ">
+        <div class="container2 footer ">
+
+
+            <div class="footer-logo">
+
+                <div class="logo">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Ecommerce</p>
+                </div>
+
+                <p>Welcome to Thapa EcomStore, your ultimate destination for cutting-edge gadgets!</p>
+            </div>
+
+
+            <div class="shopping">
+                <h3>SHOPPING</h3>
+                <p>Computer Store</p>
+                <p>Laptop Store</p>
+                <p>Accessories</p>
+                <p>Sales & Discount</p>
+            </div>
+
+            <div class="experience">
+                <h3>Experience</h3>
+                <p>Contact Us</p>
+                <p>Payment Method</p>
+                <p>Delivery</p>
+                <p>Sales & Discount</p>
+            </div>
+
+            <div class="newsletter">
+                <h3>NEWSLETTER</h3>
+                <p>Be the first to know about new
+                    arrivals, sales & promos!</p>
+
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER-END -->
+
+
+    <script src="cart.js"></script>
+</body>
+
+</html>

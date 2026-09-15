@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+  /*  FILTERS IN CSS */ 
+
+.f {
+  width: 80%;
+  height: 80vh;
+  background-color: aqua;
+  margin: auto;
+  background-image: url(./images/img\ \(4\).jpg);
+  background-size: 100% 100%;
+
+  /* FILTERS */
+  filter: grayscale();
+  filter: blur(5px);
+  filter: brightness(150%);
+  filter: contrast(150%);
+  filter: saturate(3);
+  filter: invert();
+  filter: opacity(0.9);
+
+  /* COMBINE ALL PROPERTIES */
+  filter: blur(3px) contrast(1.2) grayscale(0.5);
+}
+
+    
+</style>
+<body>
+      <!-- FILTERS IN CSS -->
+
+    <div class="f"></div>
+    
+</body>
+</html>

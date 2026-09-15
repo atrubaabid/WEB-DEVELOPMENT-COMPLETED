@@ -1,0 +1,124 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+  /* COMBINATORS */
+
+/* universal selector */
+.us * {
+  color: blue;
+}
+
+/* descendant selector */
+.c1 .cc1 {
+  color: red;
+}
+
+/* child selector */
+/* all child elements target */
+.mm1 span > p {
+  color: blue;
+}
+
+/* adjacent sibling selector */
+/* only first sibling target */
+.mm2 span + p {
+  color: rgb(250, 53, 244);
+}
+
+/* general sibling */
+/* all siblings */
+
+.mm2 span ~ p {
+  color: rgb(250, 53, 244);
+}
+    
+</style>
+<body>
+
+  
+    <!-- Selectors -->
+
+    <!-- universal selector -->
+
+    <!-- <div class="us">
+        <p>a</p>
+        <b>a</b>
+        <i>a</i>
+        <u>a</u>
+    </div> -->
+
+    <!-- /* descendant selector */ -->
+
+    <!-- <div class="c1">
+        <p>Atruba</p>
+        <div class="cc1">Abid</div>
+    </div> -->
+
+    <!-- /* child selector */ -->
+
+    <!-- <div class="mm1">
+        <span>
+            <p>p</p>
+            <p>p</p>
+            <p>p</p>
+
+            <span class="">
+                <p>fffffff</p>
+            </span>
+
+            <li>ddddd</li>
+            <li>ddddd</li>
+            <p>p</p>
+
+        </span>
+    </div> -->
+
+    <!-- /* adjacent sibling selector */ -->
+
+    <!-- <div class="mm2">
+        <span>A</span>
+        <p>b</p>
+        <div class="">
+            <span>
+            </span>
+                <p>d</p>
+
+        </div>
+    </div> -->
+
+    <!-- general sibling -->
+    <!-- 
+    <div class="mm2">
+        <span>A</span>
+        <p>b</p>
+        <p>b</p>
+        <p>b</p>
+        <p>b</p>
+        <p>b</p>
+        <div class="">ss
+            <span>
+
+            </span>
+
+            <p>b</p>
+            <p>b</p>
+            <p>b</p>
+            <p>b</p>
+            <p>b</p>
+
+            <p>d</p>
+
+        </div>
+    </div> -->
+    
+</body>
+</html>

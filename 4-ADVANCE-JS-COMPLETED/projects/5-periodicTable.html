@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        text-align: center;
+        background-color: black;
+        color: yellow;
+
+        & h1 {
+            margin-top: 2rem;
+        }
+    }
+
+    .elembody {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        padding: 2.5rem;
+        flex-wrap: wrap;
+    }
+
+    .element {
+        width: 70px;
+        aspect-ratio: 1;
+        border: 1px solid yellow;
+        border-radius: 10px;
+        display: grid;
+        place-items: center;
+
+        &:hover {
+            background-color: yellow;
+            color: black;
+        }
+    }
+</style>
+
+<body>
+    <h1>Periodic Table</h1>
+    <div class="elembody">
+
+    </div>
+
+
+
+
+    <script>
+
+        // CREATE ELEMNTS WITH FUNCTION
+        let createElem = (symbol, automicNumber, name) => {
+            let element = document.createElement("div");
+            element.innerHTML = symbol;
+            element.classList.add("element");
+            element.setAttribute("atomicNumber", automicNumber);
+            element.setAttribute("name", name);
+
+            return element;
+        }
+
+
+        // CREATE PERIODIC-TABLE WITH FUNCTION
+        let periodicTable = () => {
+            let mainbody = document.querySelector(".elembody");
+
+            for (let i = 1; i <= 50; i++) {
+
+                let element = createElem(`Elem${i}`, i, `Element${i}`);
+                mainbody.append(element);
+
+
+
+
+                // let element = document.createElement("div");
+                // element.innerHTML = `Elem${i}`
+                // element.classList.add("element")
+                // mainbody.append(element)
+                // element.setAttribute("atomicNumber", i)
+                // element.setAttribute("name", `Element ${i}`)
+            }
+
+            mainbody.addEventListener("click", (e) => {
+                if (e.target.classList.contains("element")) {
+                    let atomicNumber = e.target.getAttribute("atomicNumber");
+                    let name = e.target.getAttribute("name");
+                    alert(`Atomic Number: ${atomicNumber}\nElement Name: ${name}`)
+
+
+                }
+
+            })
+
+        }
+
+
+
+
+
+        periodicTable()
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 98%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        box-sizing: border-box;
+        font-family: sans-serif;
+
+    }
+
+    .conatiner {
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.192);
+        padding: 3rem;
+        font-size: 15px;
+        border-radius: 20px;
+
+        & .keyPressed {
+            margin-top: 50px;
+        }
+
+        & input {
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 50px;
+            border: 1px solid yellow;
+            background-color: transparent;
+            color: white;
+
+        }
+
+        #myinput::placeholder {
+            color: yellow;
+            padding-left: 15px;
+            opacity: 0.5;
+        }
+    }
+</style>
+
+<body>
+
+
+
+    <div class="conatiner">
+        <input type="text" id="myinput" placeholder="typeSomething....">
+
+        <p class="keyPressed">keyPressed: </p>
+        <p class="KeyCode">KeyCode: </p>
+        <p class="charCode"> charCode:</p>
+        <p class="eventType"> eventType:</p>
+    </div>
+
+
+
+    <script>
+        let input = document.querySelector("#myinput")
+        let keyPressed = document.querySelector(".keyPressed")
+        let KeyCode = document.querySelector(".KeyCode")
+        let charCode = document.querySelector(".charCode")
+        let eventType = document.querySelector(".eventType")
+
+
+        // keydown
+        // input.addEventListener("keydown", (e) => {
+        //     console.log(e);
+        //     keyPressed.innerHTML = `keyPressed: ${e.key}`;
+        //     KeyCode.innerHTML = `KeyCode: ${e.code}`;
+        //     charCode.innerHTML = `charCode: ${e.key.charCodeAt(0)}`;
+        //     eventType.innerHTML = `eventType: ${e.type}`;
+
+        // })
+
+
+
+
+        // keyup
+        input.addEventListener("keyup", (e) => {
+            console.log(e);
+            keyPressed.innerHTML = `keyPressed: ${e.key}`;
+            KeyCode.innerHTML = `KeyCode: ${e.code}`;
+            charCode.innerHTML = `charCode: ${e.key.charCodeAt(0)}`;
+            eventType.innerHTML = `eventType: ${e.type}`;
+
+        })
+
+    </script>
+</body>
+
+</html>

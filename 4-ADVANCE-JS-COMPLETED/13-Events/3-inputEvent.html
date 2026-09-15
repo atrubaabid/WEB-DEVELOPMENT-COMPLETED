@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        width: 98%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        box-sizing: border-box;
+        font-family: sans-serif;
+
+    }
+
+    .conatiner {
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.192);
+        padding: 3rem;
+        font-size: 15px;
+        border-radius: 20px;
+
+        & .keyPressed {
+            margin-top: 50px;
+        }
+
+        & input {
+            width: 100%;
+            padding: 10px 0;
+            border-radius: 50px;
+            border: 1px solid yellow;
+            background-color: transparent;
+            color: white;
+
+        }
+
+        #myinput::placeholder {
+            color: yellow;
+            padding-left: 15px;
+            opacity: 0.5;
+        }
+    }
+</style>
+
+<body>
+
+
+
+    <div class="conatiner">
+        <input type="text" id="myinput" name="username" placeholder="typeSomething....">
+
+        <p class="inputValue">inputValue: </p>
+        <p class="inputName">inputName: </p>
+        <p class="inputType"> inputType:</p>
+        <p class="eventType"> eventType:</p>
+    </div>
+
+
+
+    <script>
+        let input = document.querySelector("#myinput")
+        let inputValue = document.querySelector(".inputValue")
+        let inputName = document.querySelector(".inputName")
+        let inputType = document.querySelector(".inputType")
+        let eventType = document.querySelector(".eventType")
+
+
+        // // input
+        // input.addEventListener("input", (e) => {
+        //     console.log(e);
+        //     inputValue.innerHTML = `inputValue: ${e.target.value}`;
+        //     inputName.innerHTML = `inputName: ${e.target.name}`;
+        //     inputType.innerHTML = `inputType: ${e.inputType}`;
+        //     eventType.innerHTML = `eventType: ${e.type}`;
+
+        // })
+
+
+        // change
+        input.addEventListener("change", (e) => {
+            console.log(e);
+            inputValue.innerHTML = `inputValue: ${e.target.value}`;
+            inputName.innerHTML = `inputName: ${e.target.name}`;
+            inputType.innerHTML = `inputType: ${e.inputType}`;
+            eventType.innerHTML = `eventType: ${e.type}`;
+
+        })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
